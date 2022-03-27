@@ -6,6 +6,7 @@
   <title>Tienda Militar HN | Inventario</title>
   <link rel="icon" href="../../dist/img/icono.png">
 
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -30,10 +31,27 @@
       <li class="nav-item d-none d-sm-inline-block">
         <a href="../../index.html" class="nav-link">Inicio</a>
       </li>
-      
     </ul>
 
     <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search --> <!-- ICONOS EN LA BARRA DE NAVEGACION -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="facebook" href="https://www.facebook.com/tiendamilitarhn5" role="button">
+          <i class="fab fa-facebook fa-1.5x"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="phone" href="#" role="button">
+          <i class="fas fas fa-phone-alt fa-1.5x"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="mapa" href="https://goo.gl/maps/ssuy5qxz1KHUqjWCA" role="button">
+          <i class="fas fa-map-marker-alt fa-1.5x"></i>
+        </a>
+      </li>
+    </ul>
     
   </nav>
   <!-- /.navbar -->
@@ -42,8 +60,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="../../index.html" class="brand-link">
-      <img src="../../dist/img/icono.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Tienda Militar HN</span>
+      <img src="../../dist/img/LOGO PEQUEÑO.jpg" alt="TIENDA LOGO" class="img-fluid">
     </a>
 
     <!-- Sidebar -->
@@ -169,7 +186,6 @@
               <p>
                 Ventas
                 <i class="fas fa-angle-left right"></i>
-               
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -190,9 +206,17 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Reporte de Ventas</p>
                 </a>
-              </li>            
-              
-            </ul>
+              </li>
+             </ul>       
+              <li class="nav-item">
+                <a href="contactanos.html" class="nav-link">
+                  <i class="nav-icon far fa-envelope"></i>
+                  <p>
+                    Contacto
+                  </p>
+                </a>
+              </li>    
+            
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -227,9 +251,7 @@
          
 
           <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarProducto">
-          
-            Agregar Productos
-  
+            Agregar Producto
           </button>
         </div>
         <div class="card-body">
@@ -241,9 +263,9 @@
                
               <th style="width:10px">#</th>
               <th>Imagen</th>
-              <th>Código Producto</th>
-              <th>Categoria</th>
+              <th>Código Art.</th>
               <th>Nombre</th>
+              <th>Categoria</th>
               <th>Descripción</th>
               <th>Precio Compra</th>
               <th>Precio Venta</th>
@@ -262,9 +284,9 @@
                 <td>1</td>
                 <td><img src="../../dist/img/anonymous.png" class="img-thumbnail" width="40px"></td>
                 <td>32135</td>
-                <td>Camisas</td>
                 <td>Camisa Polo</td>
-                <td>Camisa estilo polo de algodon Color Verde</td>
+                <td>Camisas</td>
+                <td>Estilo polo, Color Verde</td>
                 <td>L.200.00</td>
                 <td>L.350.00</td>               
                 <td>6</td>
@@ -289,9 +311,9 @@
                 <td>2</td>
                 <td><img src="../../dist/img/anonymous.png" class="img-thumbnail" width="40px"></td>
                 <td>16854</td>
-                <td>Relojes</td>
                 <td>Reloj Salco</td>
-                <td>Reloj resistente al agua,doble hora, color negro, brazalete hule</td>
+                <td>Relojes</td>
+                <td>resistente al agua, doble hora, color negro, brazalete hule</td>
                 <td>L.250.00</td>
                 <td>L.350.00</td>               
                 <td>13</td>
@@ -316,11 +338,11 @@
                 <td>3</td>
                 <td><img src="../../dist/img/anonymous.png" class="img-thumbnail" width="40px"></td>
                 <td>87465</td>
-                <td>Pantalones</td>
                 <td>Pantalon Negro</td>
-                <td>pantalon moteado, color negro con detalles de varios colores</td>
+                <td>Pantalones</td>
+                <td>moteado, color negro, detalles de varios colores</td>
                 <td>L.300.00</td>
-                <td>L.4000.00</td>               
+                <td>L.450.00</td>               
                 <td>8</td>
                 <td><button class="btn btn-success btn-xs">Disponible</button></td>
                 <td>2022-01-01 12:10:55</td>
@@ -343,9 +365,9 @@
                 <td>4</td>
                 <td><img src="../../dist/img/anonymous.png" class="img-thumbnail" width="40px"></td>
                 <td>13513</td>
-                <td>Llaveros</td>
                 <td>Llavero Metalico</td>
-                <td>Metalico, color plata forma rifle de asalto</td>
+                <td>Llaveros</td>
+                <td>Metalico, color plata, forma rifle de asalto</td>
                 <td>L.80.00</td>
                 <td>L.150.00</td>               
                 <td>10</td>
@@ -370,9 +392,9 @@
                 <td>5</td>
                 <td><img src="../../dist/img/anonymous.png" class="img-thumbnail" width="40px"></td>
                 <td>97845</td>
-                <td>Insignias</td>
                 <td>Insignia Estrella</td>
-                <td>insignia forma estrella, color dorado Rango</td>
+                <td>Insignias</td>
+                <td>Forma estrella, color dorado</td>
                 <td>L.50.00</td>
                 <td>L.120.00</td>               
                 <td>0</td>
@@ -423,7 +445,7 @@
         CABEZA DEL MODAL
         ======================================-->
         <div class="modal-header">
-          <h4 class="modal-title">Agregar Product</h4>
+          <h4 class="modal-title">Agregar Producto</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -436,34 +458,24 @@
           <!-- ENTRADA PARA EL CODIGO -->
             
           <div class="form-group">
-              
             <div class="input-group">
-            
               <span class="input-group-addon"></span> 
-
               <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="Código Producto" required>
-
             </div>
-
           </div>
 
-          <!-- ENTRADA PARA EL CATEGORIA -->
+          <!-- ENTRADA PARA EL NOMBRE -->
             
           <div class="form-group">
-              
             <div class="input-group">
-            
               <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="Categoría" required>
-
+              <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="Nombre Articulo" required>
             </div>
-
           </div>
 
                         
          
-          <!-- ENTRADA PARA EL NOMBRE -->
+          <!-- ENTRADA PARA CATEGORIA -->
             
           <div class="form-group">
               
@@ -471,27 +483,22 @@
             
               <span class="input-group-addon"></span> 
 
-              <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Ingresar Nombre " required>
-
+              <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Categoria" required>
             </div>
-
           </div>
 
           <!-- ENTRADA PARA EL DESCRIPCION  -->
             
           <div class="form-group">
-              
+
             <div class="input-group">
             
               <span class="input-group-addon"></span> 
-
               <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Descripción" required>
-
             </div>
-
           </div>
 
-          <!-- ENTRADA PRECIO DE COMPRA  -->
+          <!-- ENTRADA DE EXISTENCIA  -->
             
           <div class="form-group">
               
@@ -499,24 +506,20 @@
             
               <span class="input-group-addon"></span> 
 
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Cantidad de Nuevas Existencias" required>
+            </div>
+          </div>
+
+          <!-- ENTRADA PRECIO DE COMPRA -->
+            
+          <div class="form-group">
+              
+            <div class="input-group">
+            
+              <span class="input-group-text">L.</span> 
               <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Precio de Compra" required>
-
+              <span class="input-group-text">.00</span>
             </div>
-
-          </div>
-
-          <!-- ENTRADA PRECIO DE VENTA  -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Precio de venta" required>
-
-            </div>
-
           </div>
 
            <!-- ENTRADA PRECIO DE VENTA  -->
@@ -525,12 +528,10 @@
               
             <div class="input-group">
             
-              <span class="input-group-addon"></span> 
-
+              <span class="input-group-text">L.</span> 
               <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Precio de venta" required>
-
+              <span class="input-group-text">.00</span>
             </div>
-
           </div>
 
           <!-- ENTRADA PRECIO DE AGREGADO  -->
@@ -542,20 +543,14 @@
               <span class="input-group-addon"></span> 
 
               <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Fecha de Agregado" required>
-
             </div>
-
           </div>
                       
                 
-          
-
-          
-  
         </div>
         <div class="modal-footer justify-content-between">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar Producto</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-success">Guardar Producto</button>
         </div>
 
       </form>
@@ -574,6 +569,8 @@
     </div>
     <strong>Copyright &copy; 2022 <a href="">Tienda Militar HN</a>.</strong> Todos los derechos reservados.
   </footer>
+
+  
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
