@@ -95,7 +95,7 @@
               </li>
           
               <li class="nav-item">
-                <a href="../example/empleados.html" class="nav-link">
+                <a href="empleados.html" class="nav-link">
                   <i class="nav-icon fas fa-user"></i>
                   <p>
                     Empleados
@@ -105,7 +105,7 @@
               </li>
     
               <li class="nav-item">
-                <a href="../example/clientes.html" class="nav-link">
+                <a href="clientes.html" class="nav-link">
                   <i class="nav-icon fas fa-users"></i>
                   <p>
                     Clientes
@@ -115,7 +115,7 @@
               </li>
     
               <li class="nav-item">
-                <a href="../example/proveedores.html" class="nav-link">
+                <a href="proveedores.html" class="nav-link">
                   <i class="nav-icon fas fa-address-book"></i>
                   <p>
                     Proveedores
@@ -125,7 +125,7 @@
               </li>
     
           <li class="nav-item">
-            <a href="../example/categorias.html" class="nav-link">
+            <a href="categorias.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Categorias
@@ -147,14 +147,14 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../example/inventario.html" class="nav-link">
+                <a href="inventario.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Inventario</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="../example/reporte_inventario.html" class="nav-link">
+                <a href="reporte_inventario.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Reporte de Inventario</p>
                 </a>
@@ -164,7 +164,7 @@
           </li>
 
           <li class="nav-item">
-            <a href="../example/compras.html" class="nav-link">
+            <a href="compras.html" class="nav-link">
               <i class="nav-icon fas  fa-store"></i>
              
              
@@ -176,19 +176,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../example/compras.html"class="nav-link">
+                <a href="compras.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Administrar Compras</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="top-nav-sidebar copy.html" class="nav-link">
+                <a href="../layout/top-nav-sidebar copy.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Nueva Orden de Compra</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="boxed copy.html" class="nav-link">
+                <a href="../layout/boxed copy.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Reporte de Compras</p>
                 </a>
@@ -249,12 +249,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Orden de compras</h1>
+            <h1>Devolución sobre compras</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item active">Orden de compras</li>
+              <li class="breadcrumb-item active">Devoluiones sobre compras</li>
             </ol>
           </div>
         </div>
@@ -271,7 +271,7 @@
 
           <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCategorias">
           
-            Agregar Nueva Orden de compras
+            Agregar devolución
   
           </button>
         </div>
@@ -282,16 +282,19 @@
              
              <tr>
                
-              <th style="width:10px">Código Proveedor</th>
-              <th>Nombre Proveedor</th>
-              <th>Fecha de pedido</th>
-              <th>Fecha entrega requerida</th>
-              <th>Terminios entrega </th>
-              <th>Terminos pago</th>
-              <th>Producto</th>
+              <th style="width:10px">#</th>
+              <th>Fecha</th>
+              <th>Código Proveedor</th>
+              <th>Proveedor</th>
+              <th>DNI/RTN</th>
+              <th>Usuario</th>
+              <th>No_Orden Compra</th>
+              <th>Motivo devolución</th>
               <th>Cantidad</th>
-              <th>Costo unitario</th>
+              <th>Total</th>
               <th>Acciones</th>
+
+
     
              </tr> 
     
@@ -300,19 +303,24 @@
             <tbody>
               
               <tr>
-                <td>PROV_001</td>
-                <td>Lagos HN</td>
-                <td>24/03/2022</td>
-                <td>30/03/2022</td>
-                <td>Entrega empresa</td>
-                <td>Contado</td>
-                <td>Botas negras</td>
-                <td>12 </td>
-                <td>150.00</td>                
-                  <td>
-    
+                <td>1</td>
+                <td>22-03-2022</td>
+                <td>PROV-001</td>
+                <td>Macroos</td>
+                <td>08011996110863</td>
+                <td>Admin</td>
+                <td>OD-202201</td>
+                <td>Devolucióon por falla
+                  <p>Solicitar efectivo</p>
+                
+                </td>
+                <td>3</td>
+                <td>800</td>
+
+                <td>
+      
                   <div class="btn-group">
-                      
+                        
                     <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
@@ -320,30 +328,31 @@
                   </div>  
     
                 </td>
+              
+                
     
               </tr>
 
 
               <tr>
-                <td>1</td>
-                <td>22-03-2022</td>
-                <td>PROV-001</td>
-                <td>La Tundra</td>
-                <td>08011996110863</td>
+                <td>2</td>
+                <td>15-04-2022</td>
+                <td>PROV-002</td>
+                <td>Inversiones Sasha</td>
+                <td>080819750141</td>
                 <td>Admin</td>
-                <td>OD-202201</td>
-                <td>000-001-01-00171005</td>
-                <td>L.20,000</td>
-                <td>Contado</td>
-                <td>Compra de mercaderia camisas Nautica</td>
-                <td><button class="btn btn-success btn-xs">Pagado</button></td>
+                <td>OD-202202</td>
+                <td>Devolucióon por falla
+                  <p>Solicitar producto</p>
                 
-                  <td>
-    
+                </td>
+                <td>2</td>
+                <td>500</td>
+              
+                <td>
+      
                   <div class="btn-group">
-
-                    <button class="btn btn-info"><i class="fas fa-file-pdf"></i></button>
-                      
+                        
                     <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
@@ -351,30 +360,32 @@
                   </div>  
     
                 </td>
+                
     
               </tr>
+    
+                  
 
 
               <tr>
-                <td>1</td>
-                <td>22-03-2022</td>
-                <td>PROV-001</td>
-                <td>La Tundra</td>
-                <td>08011996110863</td>
+                <td>3</td>
+                <td>25-04-2022</td>
+                <td>PROV-005</td>
+                <td>Variedades Maryann</td>
+                <td>0801199600114</td>
                 <td>Admin</td>
-                <td>OD-202201</td>
-                <td>000-001-01-00171005</td>
-                <td>L.20,000</td>
-                <td>Contado</td>
-                <td>Compra de mercaderia camisas Nautica</td>
-                <td><button class="btn btn-danger btn-xs">Crédito</button></td>
+                <td>OD-202205</td>
+                <td>Devolucióon por falla
+                  <p>Solicitar efectivo</p>
                 
-                  <td>
-    
+                </td>
+                <td>1</td>
+                <td>200</td>
+              
+                <td>
+      
                   <div class="btn-group">
-
-                    <button class="btn btn-info"><i class="fas fa-file-pdf"></i></button>
-                      
+                        
                     <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
@@ -382,8 +393,10 @@
                   </div>  
     
                 </td>
+                
     
               </tr>
+    
 
               
 
@@ -421,7 +434,7 @@
         CABEZA DEL MODAL
         ======================================-->
         <div class="modal-header">
-          <h4 class="modal-title">Agregar Categoría</h4>
+          <h4 class="modal-title">Agregar Devolución</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -439,7 +452,7 @@
             
               <span class="input-group-addon"></span> 
 
-              <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="Ingresar Código Categoría" required>
+              <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="Ingresar Fecha" required>
 
             </div>
 
@@ -447,7 +460,7 @@
 
                         
          
-          <!-- ENTRADA PARA EL NOMBRE -->
+          <!-- ENTRADA PARA CODIGO PROVEEDOR -->
             
           <div class="form-group">
               
@@ -455,13 +468,13 @@
             
               <span class="input-group-addon"></span> 
 
-              <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Ingresar Nombre " required>
+              <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Ingresar Codigo proveedor " required>
 
             </div>
 
           </div>
 
-          <!-- ENTRADA PARA EL DESCRIPCION  -->
+          <!-- ENTRADA PARA EL NOMBRE PROVEEDOR  -->
             
           <div class="form-group">
               
@@ -469,21 +482,108 @@
             
               <span class="input-group-addon"></span> 
 
-              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Descripción" required>
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar nombre proveedor" required>
 
             </div>
 
           </div>
                       
-                
-          
+           <!-- ENTRADA PARA EL DNI O RTN  -->
+            
+           <div class="form-group">
+              
+            <div class="input-group">
+            
+              <span class="input-group-addon"></span> 
 
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar DNI/RTN proveedor " required>
+
+            </div>
+
+          </div>
+                            
+           <!-- ENTRADA PARA EL USUARIO  -->
+            
+           <div class="form-group">
+              
+            <div class="input-group">
+            
+              <span class="input-group-addon"></span> 
+
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Igresar tipo Usuario" required>
+
+            </div>
+
+          </div>
+                            
+
+          <!-- ENTRADA PARA EL NUMERO DE ORDEN  -->
+            
+          <div class="form-group">
+              
+            <div class="input-group">
+            
+              <span class="input-group-addon"></span> 
+
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Igresar numero Orden Compra" required>
+
+            </div>
+
+          </div>
+
+           <!-- ENTRADA PARA EL MOTIVO DE DEVOLUCION  -->
+            
+           <div class="form-group">
+              
+            <div class="input-group">
+            
+              <span class="input-group-addon"></span> 
+
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Igresar Motivo devolución" required>
+
+            </div>
+
+          </div>
+
+           <!-- ENTRADA PARA LA CANTIDAD DEL PRODUCTOR  -->
+            
+           <div class="form-group">
+              
+            <div class="input-group">
+            
+              <span class="input-group-addon"></span> 
+
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Igresar Cantidad del producto a devolver" required>
+
+            </div>
+
+          </div>
+
+          <!-- ENTRADA PARA EL TOTAL  -->
+            
+          <div class="form-group">
+              
+            <div class="input-group">
+            
+              <span class="input-group-addon"></span> 
+
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Igresar total en lempiras" required>
+
+            </div>
+
+          </div>
+          
           
   
+
+
+
+
+
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar Categoría</button>
+          <button type="button" class="btn btn-primary">Guardar Devolución</button>
         </div>
 
       </form>
