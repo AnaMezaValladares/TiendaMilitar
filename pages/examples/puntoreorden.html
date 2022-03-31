@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tienda Militar HN | Clientes</title>
+  <title>Tienda Militar HN | Punto Reorden</title>
   <link rel="icon" href="../../dist/img/LOGO DIMINUTO.jpg">
+
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -22,11 +23,12 @@
 <div class="wrapper">
   <!-- Navbar -->
 
-  
-<!-- Preloader  PAGINA DE CARGA --> 
-<div class="preloader flex-column justify-content-center align-items-center">
-  <img class="animation__shake" src="../../dist/img/LOGO DIMINUTO.jpg" alt="logodiminuto" height="60" width="60">
-</div>
+  <!-- Preloader  PAGINA DE CARGA --> 
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="../../dist/img/LOGO DIMINUTO.jpg" alt="logodiminuto" height="60" width="60">
+  </div>
+ 
+
   
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
@@ -64,11 +66,10 @@
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
+    <!-- Brand Logo  IMAGEN LOGO ESQUINA IZQUIERDA SUPERIOR-->
     <a href="../../index.html" class="brand-link">
       <img src="../../dist/img/LOGO PEQUEÑO.jpg" alt="TIENDA LOGO" class="img-fluid">
     </a>
-
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -101,6 +102,7 @@
                   </p>
                 </a>
               </li>
+          
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon  fas fa-users"></i>
@@ -133,6 +135,7 @@
                 </ul>
               </li>
     
+    
           <li class="nav-item">
             <a href="categorias.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
@@ -142,16 +145,14 @@
               </p>
             </a>
           </li>
+
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas   fa-warehouse"></i>
              
-             
-             
               <p>
                 Inventario
                 <i class="fas fa-angle-left right"></i>
-                
                
               </p>
             </a>
@@ -178,13 +179,13 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Reporte de Inventario</p>
                 </a>
-              </li>            
+              </li>              
               
             </ul>
           </li>
 
           <li class="nav-item">
-            <a href="inventario.html" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas  fa-store"></i>
              
              
@@ -196,15 +197,15 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="compras.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Administrar Compras</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../layout/top-nav-sidebar.html" class="nav-link">
+                <a href="../layout/top-nav-sidebar copy.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Nueva Compra</p>
+                  <p>Nueva Orden de Compra</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -220,7 +221,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../layout/boxed copy.html.html" class="nav-link">
+                <a href="../layout/boxed copy.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Reporte de Compras</p>
                 </a>
@@ -235,7 +236,6 @@
               <p>
                 Ventas
                 <i class="fas fa-angle-left right"></i>
-               
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -256,16 +256,16 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Reporte de Ventas</p>
                 </a>
-              </li>            
-            </ul>
-            <li class="nav-item">
-              <a href="contactanos.html" class="nav-link">
-                <i class="nav-icon far fa-envelope"></i>
-                <p>
-                  Contacto
-                </p>
-              </a>
-            </li>
+              </li>
+             </ul>       
+              <li class="nav-item">
+                <a href="contactanos.html" class="nav-link">
+                  <i class="nav-icon far fa-envelope"></i>
+                  <p>
+                    Contacto
+                  </p>
+                </a>
+              </li>    
             
       </nav>
       <!-- /.sidebar-menu -->
@@ -280,12 +280,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Clientes</h1>
+            <h1>Articulos en Punto de Reorden</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item active">Clientes</li>
+              <li class="breadcrumb-item active">Inventario</li>
             </ol>
           </div>
         </div>
@@ -299,28 +299,31 @@
       <div class="card">
         <div class="card-header">
          
+         <!-- MODAL
+          <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarProducto">
+            Agregar Producto
+          </button>   -->
 
-          <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCliente">
-          
-            Agregar Cliente
-  
-          </button>
+
         </div>
         <div class="card-body">
-          <table id="tablas" class="table table-bordered table-striped">
+          <table class="table table-bordered table-striped dt-responsive tablas">
+         
             <thead>
              
              <tr>
                
               <th style="width:10px">#</th>
-              <th>Código Cliente</th>
-              <th>DNI/RTN</th>
+              <th>Imagen</th>
+              <th>Código Art.</th>
               <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Dirección</th>
-              <th>Teléfono</th>
-              <th>Correo Electrónico</th>
-              <th>Fecha de registro</th>
+              <th>Categoria</th>
+              <th>Descripción</th>
+              <th>Precio Compra</th>
+              <th>Precio Venta</th>
+              <th>Existencias</th>
+              <th>Estado</th>
+              <th>Ultima Modificacion</th>
               <th>Acciones</th>
     
              </tr> 
@@ -328,95 +331,22 @@
             </thead>
     
             <tbody>
-              
               <tr>
                 <td>1</td>
-                <td>CL-001</td>
-                <td>08011997110856</td>
-                <td>Juancarlos</td>
-                <td>Maradiaga</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>99526321</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>2017-12-11 12:05:32</td>
+                <td><img src="../../dist/img/anonymous.png" class="img-thumbnail" width="40px"></td>
+                <td>9745</td>
+                <td>Insignia Estrella</td>
+                <td>Insignias</td>
+                <td>Forma estrella, color dorado</td>
+                <td>L.50.00</td>
+                <td>L.120.00</td>               
+                <td>0</td>
+                <td><button class="btn btn-danger btn-xs">Agotado</button></td>
+                <td>2022-01-01 12:10:55</td>
+                
                 <td>
     
                   <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
-    
-                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-    
-                  </div>  
-    
-                </td>
-    
-              </tr>
-
-              <tr>
-                <td>1</td>
-                <td>CL-001</td>
-                <td>08011997110856</td>
-                <td>Juancarlos</td>
-                <td>Maradiaga</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>99526321</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>2017-12-11 12:05:32</td>
-                <td>
-    
-                  <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
-    
-                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-    
-                  </div>  
-    
-                </td>
-    
-              </tr>
-
-              <tr>
-                <td>1</td>
-                <td>CL-001</td>
-                <td>08011997110856</td>
-                <td>Juancarlos</td>
-                <td>Maradiaga</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>99526321</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>2017-12-11 12:05:32</td>
-                <td>
-    
-                  <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
-    
-                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-    
-                  </div>  
-    
-                </td>
-    
-              </tr>
-
-              <tr>
-                <td>1</td>
-                <td>CL-001</td>
-                <td>08011997110856</td>
-                <td>Juancarlos</td>
-                <td>Maradiaga</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>99526321</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>2017-12-11 12:05:32</td>
-                <td>
-    
-                  <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
-    
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
                   </div>  
@@ -425,10 +355,31 @@
     
               </tr>
                
-               
+              <tr>
+                <td>2</td>
+                <td><img src="../../dist/img/anonymous.png" class="img-thumbnail" width="40px"></td>
+                <td>9125</td>
+                <td>Linterna 3x1</td>
+                <td>Linternas</td>
+                <td>Linterna con Luz artificial, Laser y Luz UV</td>
+                <td>L.80.00</td>
+                <td>L.150.00</td>               
+                <td>2</td>
+                <td><button class="btn btn-success btn-xs">Disponible</button></td>
+                <td>2022-01-01 12:10:55</td>
+                
+                <td>
+    
+                  <div class="btn-group">    
+                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+    
+                  </div>  
+    
+                </td>
+    
+              </tr>
     
             </tbody>
-    
     
            </table>
         </div>
@@ -443,12 +394,12 @@
   <!-- /.content-wrapper -->
 
 <!--=====================================
-     MODAL AGREGAR CLIENTE
+     MODAL AGREGAR PRODUCTOS
   ======================================-->
 
 
 
-  <div class="modal fade" id="modalAgregarCliente">
+  <div class="modal fade" id="modalAgregarProducto">
     <div class="modal-dialog">
       <div class="modal-content">
         <form role="form" method="post">
@@ -456,7 +407,7 @@
         CABEZA DEL MODAL
         ======================================-->
         <div class="modal-header">
-          <h4 class="modal-title">Agregar Cliente</h4>
+          <h4 class="modal-title">Agregar Producto</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -469,126 +420,99 @@
           <!-- ENTRADA PARA EL CODIGO -->
             
           <div class="form-group">
-              
             <div class="input-group">
-            
               <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="Ingresar Código Cliente" required>
-
+              <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="Código Producto" required>
             </div>
-
           </div>
 
-          <!-- ENTRADA PARA EL DNI/RTN-->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoDNIRTN" placeholder="Ingresar DNI/RTN" required>
-
-            </div>
-
-          </div>
-
-               
-         
           <!-- ENTRADA PARA EL NOMBRE -->
             
           <div class="form-group">
-              
             <div class="input-group">
-            
               <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Ingresar Nombre" required>
-
+              <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="Nombre Articulo" required>
             </div>
-
           </div>
 
-          <!-- ENTRADA PARA EL APELLIDO  -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Apellido" required>
-
-            </div>
-
-          </div>
-
+                        
          
-          <!-- ENTRADA PARA LA DIRECCIÓN -->
+          <!-- ENTRADA PARA CATEGORIA -->
             
           <div class="form-group">
               
             <div class="input-group">
             
-              <span class="input-group-addon"><i class=""></i></span> 
+              <span class="input-group-addon"></span> 
 
-              <input type="text" class="form-control input-lg" name="nuevaDireccion" placeholder="Ingresar Dirección" required>
-
+              <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Categoria" required>
             </div>
-
           </div>
 
-          <!-- ENTRADA PARA EL TELÉFONO -->
+          <!-- ENTRADA PARA EL DESCRIPCION  -->
+            
+          <div class="form-group">
+
+            <div class="input-group">
+            
+              <span class="input-group-addon"></span> 
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Descripción" required>
+            </div>
+          </div>
+
+          <!-- ENTRADA DE EXISTENCIA  -->
             
           <div class="form-group">
               
             <div class="input-group">
             
-              <span class="input-group-addon"><i class=""></i></span> 
+              <span class="input-group-addon"></span> 
 
-              <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar Teléfono" data-inputmask="'mask':'(999) 9999-9999'" data-mask required>
-
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Cantidad de Nuevas Existencias" required>
             </div>
-
           </div>
 
-          <!-- ENTRADA PARA EL EMAIL -->
+          <!-- ENTRADA PRECIO DE COMPRA -->
             
           <div class="form-group">
               
             <div class="input-group">
             
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Ingresar Correo Electrónico" required>
-
+              <span class="input-group-text">L.</span> 
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Precio de Compra" required>
+              <span class="input-group-text">.00</span>
             </div>
-
           </div>
 
-          <!-- ENTRADA PARA FECHA DE REGISTRO -->
+           <!-- ENTRADA PRECIO DE VENTA  -->
+            
+           <div class="form-group">
+              
+            <div class="input-group">
+            
+              <span class="input-group-text">L.</span> 
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Precio de venta" required>
+              <span class="input-group-text">.00</span>
+            </div>
+          </div>
+
+          <!-- ENTRADA PRECIO DE AGREGADO  -->
             
           <div class="form-group">
               
             <div class="input-group">
             
-              <span class="input-group-addon"><i class=""></i></span> 
+              <span class="input-group-addon"></span> 
 
-              <input type="text" class="form-control input-lg" name="nuevoFecha" placeholder="Ingresar Fecha de Registro" required>
-
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Fecha de Agregado" required>
             </div>
-
           </div>
-
- 
-
-    
-  
+                      
+                
         </div>
         <div class="modal-footer justify-content-between">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar Cliente</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-success">Guardar Producto</button>
         </div>
 
       </form>
@@ -605,8 +529,10 @@
     <div class="float-right d-none d-sm-block">
      
     </div>
-    <strong>Copyright &copy; 2022 <a href="">Tienda Militar HN</a>.</strong> Todos los derechos reservados..
+    <strong>Copyright &copy; 2022 <a href="">Tienda Militar HN</a>.</strong> Todos los derechos reservados.
   </footer>
+
+  
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -620,107 +546,8 @@
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- DataTables  & Plugins -->
-<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-<script src="../../plugins/jszip/jszip.min.js"></script>
-<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
-<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
-<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
-<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
-<!-- Page specific script -->
-<script>
-  $(function () {
-    $("#tablas").DataTable({
-
-      "language": {
-
-"sProcessing":     "Procesando...",
-"sLengthMenu":     "Mostrar _MENU_ registros",
-"sZeroRecords":    "No se encontraron resultados",
-"sEmptyTable":     "Ningún dato disponible en esta tabla",
-"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_",
-"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0",
-"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-"sInfoPostFix":    "",
-"sSearch":         "Buscar:",
-"sUrl":            "",
-"sInfoThousands":  ",",
-"sLoadingRecords": "Cargando...",
-"oPaginate": {
-"sFirst":    "Primero",
-"sLast":     "Último",
-"sNext":     "Siguiente",
-"sPrevious": "Anterior"
-},
-"oAria": {
-  "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-  "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-}
-      
-    },
-    "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": [ "csv", "excel", "pdf"]
-    }).buttons().container().appendTo('#tablas_wrapper .col-md-6:eq(0)');
-    $('#example2').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
-      "responsive": true,
-    });
-  });
-</script>
-
-<script>
-  $(function () {
-    $("#example1").DataTable({
-
-      "language": {
-
-"sProcessing":     "Procesando...",
-"sLengthMenu":     "Mostrar _MENU_ registros",
-"sZeroRecords":    "No se encontraron resultados",
-"sEmptyTable":     "Ningún dato disponible en esta tabla",
-"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_",
-"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0",
-"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-"sInfoPostFix":    "",
-"sSearch":         "Buscar:",
-"sUrl":            "",
-"sInfoThousands":  ",",
-"sLoadingRecords": "Cargando...",
-"oPaginate": {
-"sFirst":    "Primero",
-"sLast":     "Último",
-"sNext":     "Siguiente",
-"sPrevious": "Anterior"
-},
-"oAria": {
-  "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-  "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-}
-
-}
-
-      
-    
-    
-    })
-  });
-
-</script>
 
 </body>
 </html>
