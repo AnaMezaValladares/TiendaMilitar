@@ -16,15 +16,21 @@
   <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+
+
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
 
+  <!-- Preloader  PAGINA DE CARGA --> 
   <div class="preloader flex-column justify-content-center align-items-center">
     <img class="animation__shake" src="../../dist/img/LOGO DIMINUTO.jpg" alt="logodiminuto" height="60" width="60">
   </div>
+
+
+  
 
   
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -101,36 +107,37 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="empleados.html" class="nav-link">
-                  <i class="nav-icon fas fa-user"></i>
+                <a href="#" class="nav-link">
+                  <i class="nav-icon  fas fa-users"></i>
                   <p>
-                    Empleados
-                    
+                    Personas
+                    <i class="fas fa-angle-left right"></i>
+                   
                   </p>
                 </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="empleados.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Usuarios</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="clientes.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Clientes</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="proveedores.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Proveedores</p>
+                    </a>
+                  </li>            
+                  
+                </ul>
               </li>
     
-              <li class="nav-item">
-                <a href="clientes.html" class="nav-link">
-                  <i class="nav-icon fas fa-users"></i>
-                  <p>
-                    Clientes
-                    
-                  </p>
-                </a>
-              </li>
-    
-              <li class="nav-item">
-                <a href="proveedores.html" class="nav-link">
-                  <i class="nav-icon fas fa-address-book"></i>
-                  <p>
-                    Proveedores
-                    
-                  </p>
-                </a>
-              </li>
-    
-
           <li class="nav-item">
             <a href="categorias.html" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
@@ -142,7 +149,7 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas  fa-store"></i>
+              <i class="nav-icon fas   fa-warehouse"></i>
              
              
               <p>
@@ -293,8 +300,7 @@
           </button>
         </div>
         <div class="card-body">
-          <table class="table table-bordered table-striped dt-responsive tablas">
-         
+          <table id="tablas" class="table table-bordered table-striped">
             <thead>
              
              <tr>
@@ -688,9 +694,107 @@
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../plugins/jszip/jszip.min.js"></script>
+<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#tablas").DataTable({
+
+      "language": {
+
+"sProcessing":     "Procesando...",
+"sLengthMenu":     "Mostrar _MENU_ registros",
+"sZeroRecords":    "No se encontraron resultados",
+"sEmptyTable":     "Ningún dato disponible en esta tabla",
+"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_",
+"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0",
+"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+"sInfoPostFix":    "",
+"sSearch":         "Buscar:",
+"sUrl":            "",
+"sInfoThousands":  ",",
+"sLoadingRecords": "Cargando...",
+"oPaginate": {
+"sFirst":    "Primero",
+"sLast":     "Último",
+"sNext":     "Siguiente",
+"sPrevious": "Anterior"
+},
+"oAria": {
+  "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+  "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+}
+      
+    },
+    "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": [ "csv", "excel", "pdf"]
+    }).buttons().container().appendTo('#tablas_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+
+<script>
+  $(function () {
+    $("#example1").DataTable({
+
+      "language": {
+
+"sProcessing":     "Procesando...",
+"sLengthMenu":     "Mostrar _MENU_ registros",
+"sZeroRecords":    "No se encontraron resultados",
+"sEmptyTable":     "Ningún dato disponible en esta tabla",
+"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_",
+"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0",
+"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+"sInfoPostFix":    "",
+"sSearch":         "Buscar:",
+"sUrl":            "",
+"sInfoThousands":  ",",
+"sLoadingRecords": "Cargando...",
+"oPaginate": {
+"sFirst":    "Primero",
+"sLast":     "Último",
+"sNext":     "Siguiente",
+"sPrevious": "Anterior"
+},
+"oAria": {
+  "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+  "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+}
+
+}
+
+      
+    
+    
+    })
+  });
+
+</script>
+
 </body>
 </html>

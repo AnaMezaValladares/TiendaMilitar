@@ -6,25 +6,27 @@
   <title>Tienda Militar HN | Clientes</title>
   <link rel="icon" href="../../dist/img/LOGO DIMINUTO.jpg">
 
- <!-- Google Font: Source Sans Pro -->
- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
- <!-- Font Awesome -->
- <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
- <!-- DataTables -->
- <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
- <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
- <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
- <!-- Theme style -->
- <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
 
-  <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="../../dist/img/LOGO DIMINUTO.jpg" alt="logodiminuto" height="60" width="60">
-  </div>
+  
+<!-- Preloader  PAGINA DE CARGA --> 
+<div class="preloader flex-column justify-content-center align-items-center">
+  <img class="animation__shake" src="../../dist/img/LOGO DIMINUTO.jpg" alt="logodiminuto" height="60" width="60">
+</div>
   
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
     <!-- Left navbar links -->
@@ -99,35 +101,36 @@
                   </p>
                 </a>
               </li>
-          
               <li class="nav-item">
-                <a href="empleados.html" class="nav-link">
-                  <i class="nav-icon fas fa-user"></i>
+                <a href="#" class="nav-link">
+                  <i class="nav-icon  fas fa-users"></i>
                   <p>
-                    Empleados
-                    
+                    Personas
+                    <i class="fas fa-angle-left right"></i>
+                   
                   </p>
                 </a>
-              </li>
-    
-              <li class="nav-item">
-                <a href="clientes.html" class="nav-link">
-                  <i class="nav-icon fas fa-users"></i>
-                  <p>
-                    Clientes
-                    
-                  </p>
-                </a>
-              </li>
-    
-              <li class="nav-item">
-                <a href="proveedores.html" class="nav-link">
-                  <i class="nav-icon fas fa-address-book"></i>
-                  <p>
-                    Proveedores
-                    
-                  </p>
-                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="empleados.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Usuarios</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="clientes.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Clientes</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="proveedores.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Proveedores</p>
+                    </a>
+                  </li>            
+                  
+                </ul>
               </li>
     
           <li class="nav-item">
@@ -139,15 +142,16 @@
               </p>
             </a>
           </li>
-
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas  fa-store"></i>
+              <i class="nav-icon fas   fa-warehouse"></i>
+             
              
              
               <p>
                 Inventario
                 <i class="fas fa-angle-left right"></i>
+                
                
               </p>
             </a>
@@ -168,23 +172,6 @@
               
             </ul>
           </li>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/examples/compras.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inventario</p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="../layout/boxed copy.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Reporte de Compras</p>
-                </a>
-              </li>            
-              
-            </ul>
-          </li>
 
           <li class="nav-item">
             <a href="inventario.html" class="nav-link">
@@ -199,7 +186,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="compras.html" class="nav-link">
+                <a href="../layout/top-nav.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Administrar Compras</p>
                 </a>
@@ -207,7 +194,7 @@
               <li class="nav-item">
                 <a href="../layout/top-nav-sidebar.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Nueva Orden de Compra</p>
+                  <p>Nueva Compra</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -215,7 +202,7 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Devoluciones sobre compras</p>
                 </a>
-              </li>  
+              </li>
               <li class="nav-item">
                 <a href="archivofactura.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -223,7 +210,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../layout/boxed.html" class="nav-link">
+                <a href="../layout/boxed copy.html.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Reporte de Compras</p>
                 </a>
@@ -261,17 +248,15 @@
                 </a>
               </li>            
             </ul>
-          </li>  
-          <li class="nav-item">
-            <a href="contactanos.html" class="nav-link">
-              <i class="nav-icon far fa-envelope"></i>
-              <p>
-                Contacto
-              </p>
-            </a>
-          </li>
-
-          
+            <li class="nav-item">
+              <a href="contactanos.html" class="nav-link">
+                <i class="nav-icon far fa-envelope"></i>
+                <p>
+                  Contacto
+                </p>
+              </a>
+            </li>
+            
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -312,8 +297,7 @@
           </button>
         </div>
         <div class="card-body">
-          <table class="table table-bordered table-striped dt-responsive tablas">
-         
+          <table id="tablas" class="table table-bordered table-striped">
             <thead>
              
              <tr>
@@ -434,6 +418,7 @@
                
     
             </tbody>
+    
     
            </table>
         </div>
@@ -588,9 +573,7 @@
 
  
 
-          
-
-          
+    
   
         </div>
         <div class="modal-footer justify-content-between">
@@ -612,7 +595,7 @@
     <div class="float-right d-none d-sm-block">
      
     </div>
-    <strong>Copyright &copy; 2022 <a href="">Tienda Militar HN</a>.</strong> Todos los derechos reservados.
+    <strong>Copyright &copy; 2022 <a href="">Tienda Militar HN</a>.</strong> Todos los derechos reservados..
   </footer>
 
   <!-- Control Sidebar -->
@@ -627,9 +610,107 @@
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../plugins/jszip/jszip.min.js"></script>
+<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#tablas").DataTable({
+
+      "language": {
+
+"sProcessing":     "Procesando...",
+"sLengthMenu":     "Mostrar _MENU_ registros",
+"sZeroRecords":    "No se encontraron resultados",
+"sEmptyTable":     "Ningún dato disponible en esta tabla",
+"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_",
+"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0",
+"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+"sInfoPostFix":    "",
+"sSearch":         "Buscar:",
+"sUrl":            "",
+"sInfoThousands":  ",",
+"sLoadingRecords": "Cargando...",
+"oPaginate": {
+"sFirst":    "Primero",
+"sLast":     "Último",
+"sNext":     "Siguiente",
+"sPrevious": "Anterior"
+},
+"oAria": {
+  "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+  "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+}
+      
+    },
+    "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": [ "csv", "excel", "pdf"]
+    }).buttons().container().appendTo('#tablas_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+
+<script>
+  $(function () {
+    $("#example1").DataTable({
+
+      "language": {
+
+"sProcessing":     "Procesando...",
+"sLengthMenu":     "Mostrar _MENU_ registros",
+"sZeroRecords":    "No se encontraron resultados",
+"sEmptyTable":     "Ningún dato disponible en esta tabla",
+"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_",
+"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0",
+"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+"sInfoPostFix":    "",
+"sSearch":         "Buscar:",
+"sUrl":            "",
+"sInfoThousands":  ",",
+"sLoadingRecords": "Cargando...",
+"oPaginate": {
+"sFirst":    "Primero",
+"sLast":     "Último",
+"sNext":     "Siguiente",
+"sPrevious": "Anterior"
+},
+"oAria": {
+  "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+  "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+}
+
+}
+
+      
+    
+    
+    })
+  });
+
+</script>
+
 </body>
 </html>
