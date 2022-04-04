@@ -307,289 +307,274 @@
       <!-- /.sidebar -->
     </aside>
 
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-      <!-- Content Header (Page header) -->
-      <section class="content-header">
-        <div class="container-fluid">
-          <div class="row mb-2">
-            <div class="col-sm-6">
-              <h1>Reporte de Compras</h1>
+   <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Reporte de compras</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+              <li class="breadcrumb-item active">Reporte de compras</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="card">
+        <div class="card-header">
+          <div class="row">
+
+            <div class="form-group col-md-2">
+
+              <label for="">Desde</label>
+
+              <div class="input-group">
+
+               <span class="input-group-addon"></span>
+
+               <input type="date" class="form-control input-lg" name="nuevoFecha" placeholder="Ingresar Fecha de v"
+                required>
+
+              </div>
             </div>
-            <div class="col-sm-6">
-              <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                <li class="breadcrumb-item active">Reporte de Compras</li>
-              </ol>
+
+            <div class="form-group col-md-2">
+
+              <label for="">Hasta</label>
+
+             <div class="input-group">
+
+               <span class="input-group-addon"></span>
+
+               <input type="date" class="form-control input-lg" name="nuevoFecha" placeholder="Ingresar Fecha de v"
+                required>
+
+              </div>
+        
             </div>
           </div>
-        </div><!-- /.container-fluid -->
-      </section>
+        </div>
+        <div class="card-body">
+          <table id="tablas" class="table table-bordered table-striped">
+            <thead>
+             
+             <tr>
+               
+              <th style="width:10px">#</th>
+              <th>Fecha</th>
+              <th>Producto</th>
+              <th>Cantidad</th>
+              <th>Precio</th>
+              <th>Total</th>
 
-      <!-- Main content -->
-      <section class="content">
+              
 
-        <!-- Default box -->
-        <div class="card">
-          <div class="card-header">
+    
+             </tr> 
+    
+            </thead>
+    
+            <tbody>
+              
+              <tr>
+                <td>1</td>
+                <td>01-03-2022 al 15-03-2022</td>
+                <td>Camisa</td>
+                <td>25</td>
+                <td>L.250</td>
+                <td>6,250</td>
+                
+    
+              </tr>
 
-            <div class="row">
+              <tr>
+                <td>02</td>
+                <td>01-03-2022 al 15-03-2022</td>
+                <td>Pantalones</td>
+                <td>20</td>
+                <td>L.400</td>
+                <td>8,000</td>
+                
+                
+    
+              </tr>
 
-              <div class="form-group col-md-2">
+              <tr>
+                <td>3</td>
+                <td>01-03-2022 al 15-03-2022</td>
+                <td>Gorras</td>
+                <td>15</td>
+                <td>L.150</td>
+                <td>2,250</td>
+                
+                
+    
+              </tr>
 
-                <label for="">Desde</label>
+              <tr>
+                <td>4</td>
+                <td>01-03-2022 al 15-03-2022</td>
+                <td>Camisa</td>
+                <td>20</td>
+                <td>L.300</td>
+                <td>3,300</td>
+                
+                
+    
+              </tr>
 
-                <div class="input-group">
-
-                  <span class="input-group-addon"></span>
-
-                  <input type="date" class="form-control input-lg" name="nuevoFecha" placeholder="Ingresar Fecha de v"
-                    required>
-
-                </div>
-              </div>
-
-              <div class="form-group col-md-2">
-
-                <label for="">Hasta</label>
-
-                <div class="input-group">
-
-                  <span class="input-group-addon"></span>
-
-                  <input type="date" class="form-control input-lg" name="nuevoFecha" placeholder="Ingresar Fecha de v"
-                    required>
-
-                </div>
             
-              </div>
+               
+               
+    
+            </tbody>
+    
+           </table>
+        </div>
+        <!-- /.card-body -->
+        
+      </div>
+      <!-- /.card -->
 
-              </div>
-                <section class="row">
-                  <div class="col-sm-12 col-md-2"><div class="dt-buttons btn-group flex-wrap">
-                    <button class="btn btn-secondary buttons-excel  buttons-colvis btn-info" tabindex="0" aria-controls="example1" type="button">
-                      <span>Excel</span>
-                     </button> 
-                     <button class="btn btn-secondary buttons-pdf buttons-colvis btn-info" tabindex="0" aria-controls="example1" type="button">
-                       <span>PDF</span>
-                     </button> 
-                     <button class="btn btn-secondary buttons-print  buttons-collection " tabindex="0" aria-controls="example1" type="button">
-                       <span>Generar Reporte</span>
-                     </button> 
-                   </div> 
-                 </div>
-            
-                </section>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
 
-            </div>
-
-            <div class="card-body">
-
-              <table class="table table-bordered table-striped dt-responsive tablas">
-
-                <thead>
-
-                  <tr>
-
-                    <th style="width:7px">#</th>
-                    <th>Fecha</th>
-                    <th>Producto</th>
-                    <th>Cantidad</th>
-                    <th>Precio</th>
-                    <th>Total</th>
-                  </tr>
-
-                </thead>
-
-                <tbody>
-
-                  <tr>
-                    <td>01</td>
-                    <td>01-03-2022 al 15-03-2022</td>
-                    <td>Camisas</td>
-                    <td>25</td>
-                    <td>L.250</td>
-                    <td>6,250</td>
-
-                  </tr>
-
-
-                  <tr>
-                    <td>02</td>
-                    <td>01-03-2022 al 15-03-2022</td>
-                    <td>Pantalones</td>
-                    <td>20</td>
-                    <td>L.400</td>
-                    <td>8,000</td>
-
-                  </tr>
-
-
-                  <tr>
-                    <td>03</td>
-                    <td>01-03-2022 al 15-03-2022</td>
-                    <td>Gorras</td>
-                    <td>15</td>
-                    <td>L.150</td>
-                    <td>2,250</td>
-
-                  </tr>
-
-                  
-
-                </tbody>
-
-
-  
-
-              </table>
-
-              <table class="table table-bordered table-striped dt-responsive tablas">
-  
-                <tbody>
-
-                  <tr>
-
-                    <td>Total</td>
-                    <td>16,500</td>
-
-
-                  </tr>
-
-
-
-                </tbody>
-
-              </table>
-
-
-            </div>
-            <!-- /.card-body -->
-
-          </div>
-          <!-- /.card -->
-
-      </section>
-      <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
-
-    <!--=====================================
-     MODAL AGREGAR VENTAS
+<!--=====================================
+     MODAL AGREGAR PROVEEDOR
   ======================================-->
 
-
-    <div class="modal fade" id="modalAgregarVenta">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <!--aqu cambie de class="modal-dialog a modal-dialog modal-lg modal-dialog-centered-->
-        <div class="modal-content">
-          <form role="form" method="post">
-            <!--=====================================
-        CABEZA DEL MODAL
-        ======================================-->
-            <div class="modal-header">
-              <h4 class="modal-title">Agregar Venta</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <!--=====================================
-        CUERPO DEL MODAL
-        ======================================-->
-            <div class="modal-body">
-
-              <!-- ENTRADA PARA EL CODIGO -->
-
-              <div class="form-group">
-
-                <div class="input-group">
-
-                  <span class="input-group-addon"></span>
-
-                  <input type="text" class="form-control input-lg" name="nuevoCodigoCL"
-                    placeholder="Ingresar Código Categoría" required>
-
-                </div>
-
-              </div>
-
-
-
-              <!-- ENTRADA PARA EL NOMBRE -->
-
-              <div class="form-group">
-
-                <div class="input-group">
-
-                  <span class="input-group-addon"></span>
-
-                  <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Ingresar Nombre "
-                    required>
-
-                </div>
-
-              </div>
-
-              <!-- ENTRADA PARA EL DESCRIPCION  -->
-
-              <div class="form-group">
-
-                <div class="input-group">
-
-                  <span class="input-group-addon"></span>
-
-                  <input type="text" class="form-control input-lg" name="nuevoApellido"
-                    placeholder="Ingresar Descripción" required>
-
-                </div>
-
-              </div>
-
-
-
-
-
-
-            </div>
-            <div class="modal-footer justify-content-between">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn btn-primary">Guardar Categoría</button>
-            </div>
-
-
-
-
-          </form>
-        </div>
-        <!-- /.modal-content -->
-      </div>
-      <!-- /.modal-dialog -->
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+     
     </div>
+    <strong>Copyright &copy; 2022 <a href="">Tienda Militar HN</a>.</strong> Todos los derechos reservados..
+  </footer>
 
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
 
-    <footer class="main-footer">
-      <div class="float-right d-none d-sm-block">
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../plugins/jszip/jszip.min.js"></script>
+<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+  $(function () {
+    $("#tablas").DataTable({
 
-      </div>
-      <strong>Copyright &copy; 2022 <a href="">Tienda Militar HN</a>.</strong> Todos los derechos reservados.
-    </footer>
+      "language": {
 
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-      <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
-  </div>
-  <!-- ./wrapper -->
+"sProcessing":     "Procesando...",
+"sLengthMenu":     "Mostrar _MENU_ registros",
+"sZeroRecords":    "No se encontraron resultados",
+"sEmptyTable":     "Ningún dato disponible en esta tabla",
+"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_",
+"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0",
+"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+"sInfoPostFix":    "",
+"sSearch":         "Buscar:",
+"sUrl":            "",
+"sInfoThousands":  ",",
+"sLoadingRecords": "Cargando...",
+"oPaginate": {
+"sFirst":    "Primero",
+"sLast":     "Último",
+"sNext":     "Siguiente",
+"sPrevious": "Anterior"
+},
+"oAria": {
+  "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+  "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+}
+      
+    },
+    "responsive": true, "lengthChange": false, "autoWidth": false,
+      "buttons": [ "csv", "excel", "pdf"]
+    }).buttons().container().appendTo('#tablas_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
 
-  <!-- jQuery -->
-  <script src="../../plugins/jquery/jquery.min.js"></script>
-  <!-- Bootstrap 4 -->
-  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- AdminLTE App -->
-  <script src="../../dist/js/adminlte.min.js"></script>
-  <!-- AdminLTE for demo purposes -->
-  <script src="../../dist/js/demo.js"></script>
+<script>
+  $(function () {
+    $("#example1").DataTable({
+
+      "language": {
+
+"sProcessing":     "Procesando...",
+"sLengthMenu":     "Mostrar _MENU_ registros",
+"sZeroRecords":    "No se encontraron resultados",
+"sEmptyTable":     "Ningún dato disponible en esta tabla",
+"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_",
+"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0",
+"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+"sInfoPostFix":    "",
+"sSearch":         "Buscar:",
+"sUrl":            "",
+"sInfoThousands":  ",",
+"sLoadingRecords": "Cargando...",
+"oPaginate": {
+"sFirst":    "Primero",
+"sLast":     "Último",
+"sNext":     "Siguiente",
+"sPrevious": "Anterior"
+},
+"oAria": {
+  "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+  "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+}
+
+}
+
+      
+    
+    
+    })
+  });
+
+</script>
+
 </body>
-
 </html>
