@@ -273,6 +273,28 @@
                     </p>
                   </a>
                 </li>
+
+                <li class="nav-item">
+                  <a href="../examples/reporte_provedoor.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+
+                      Reporte de proveedor
+                      
+                    </p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="../examples/reporte_cliente.html" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>
+                      
+                      Reporte de cliente
+                      
+                    </p>
+                  </a>
+                </li>
   
               </ul>
             </li>
@@ -291,19 +313,19 @@
     <!-- /.sidebar -->
   </aside>
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+   <!-- Content Wrapper. Contains page content -->
+   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Administrar Ventas</h1>
+            <h1>Administrador de Ventas</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item active">Administrar Ventas</li>
+              <li class="breadcrumb-item active">Administrador de Ventas</li>
             </ol>
           </div>
         </div>
@@ -316,114 +338,139 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <div class="col-2"><a href="top-nav-sidebar.html"><button class="btn btn-success">Nueva Venta</button></a></div>
+
+
+          <div class="col-2"><a href="top-nav-sidebar.html">
+              <button class="btn btn-success">
+                Nueva Venta
+              </button>
+            </a></div>
         </div>
         <div class="card-body">
-          <table class="table table-bordered table-striped dt-responsive tablas">
-         
+          <table id="tablas" class="table table-bordered table-striped">
             <thead>
-             
-             <tr>
-               
-              <th style="width:7px">N_Factura</th>
-              <th>Fecha Ventas</th>
-              <th>Cliente</th>
-              <th>Usuario</th>
-              <th>Impuesto</th>
-              <th>Total </th>
-              <th>Acciones</th>
-             </tr> 
-    
+
+              <tr>
+
+                <th style="width:10px">N_Factura</th>
+                <th>Fecha Ventas</th>
+                <th>Cliente</th>
+                <th>Usuario</th>
+                <th>Impuesto</th>
+                <th>Total</th>
+                <th>Acciones</th>
+
+              </tr>
+
             </thead>
-    
+
             <tbody>
-              
+
               <tr>
-                <td>001</td>
+                <td>00189</td>
                 <td>22-03-2022</td>
-                <td>Irv Rosa</td>
+                <td>irv Rosa</td>
                 <td>Vendedor</td>
                 <td>0.15</td>
-                <td>L.20,000</td>
+                <td>L.20,00</td>
+
                 <td>
-    
+
                   <div class="btn-group">
 
                     <button class="btn btn-dark"><i class="fa fa-eye"></i></button>
 
                     <button class="btn btn-info"><i class="fas fa-file-pdf"></i></button>
-    
+
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-    
-                  </div>  
-    
+
+                  </div>
+
                 </td>
-    
+
               </tr>
 
-
               <tr>
-                <td>012</td>
-                <td>22-03-2022</td>
-                <td>Ninisha Brown</td>
+                <td>0099</td>
+                <td>23-03-2022</td>
+                <td>nanisha Brown</td>
                 <td>Vendedor</td>
                 <td>0.15</td>
-                <td>L.35,000</td>
+                <td>L.500</td>
+
+
                 <td>
-              
-    
+
                   <div class="btn-group">
 
                     <button class="btn btn-dark"><i class="fa fa-eye"></i></button>
 
                     <button class="btn btn-info"><i class="fas fa-file-pdf"></i></button>
-    
+
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-    
-                  </div>  
-    
+
+                  </div>
+
                 </td>
-    
+
               </tr>
 
+              <tr>
+                <td>0008</td>
+                <td>24-03-2022</td>
+                <td>Luis Mendez</td>
+                <td>Vendedor</td>
+                <td>0.15</td>
+                <td>L. 400</td>
+
+
+                <td>
+
+                  <div class="btn-group">
+
+                    <button class="btn btn-dark"><i class="fa fa-eye"></i></button>
+
+                    <button class="btn btn-info"><i class="fas fa-file-pdf"></i></button>
+
+                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                  </div>
+
+                </td>
+
+              </tr>
 
               <tr>
-                <td>003</td>
-                <td>22-03-2022</td>
+                <td>0056</td>
+                <td>25-03-2022</td>
                 <td>Juan Martinez</td>
                 <td>Vendedor</td>
                 <td>0.15</td>
-                <td>L.20,000</td>
+                <td>L.800</td>
+
                 <td>
-    
+
                   <div class="btn-group">
 
                     <button class="btn btn-dark"><i class="fa fa-eye"></i></button>
 
                     <button class="btn btn-info"><i class="fas fa-file-pdf"></i></button>
-    
+
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-    
-                  </div>  
-    
+                  </div>
+
                 </td>
-    
+
               </tr>
 
-              
 
-              
 
-              
-               
-               
-    
+
             </tbody>
-    
-           </table>
+
+          </table>
         </div>
         <!-- /.card-body -->
-        
+
       </div>
       <!-- /.card -->
 
@@ -432,295 +479,359 @@
   </div>
   <!-- /.content-wrapper -->
 
-<!--=====================================
-       MODAL AGREGAR VENTAS
-    ======================================-->
-
-
-  <div class="modal fade" id="#" data-backdrop="static"> <!-- Modal padre de todo el contenido -->
-    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content"> <!-- Elemento hijos-->
-        <form role="form" method="post">
-        <!--=====================================
-        CABEZA DEL MODAL
-        ======================================-->
-        <div class="modal-header"><!--Elemento hijos(Titulo subtitulo o parafo)--> 
-          <h4 class="modal-title">Agregar Nueva Venta</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-         <!--=====================================
-        CUERPO DEL MODAL
-        ======================================-->
-        <div class="modal-body"> <!-- Elemento hijos(puede ir todo el contenido del modal)-->
-
-          <!-- ENTRADA PARA EL Numero de Venta -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="numeroVenta" placeholder="Ingresar Numero de Venta" required>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA EL Vendedor -->
-            
-          
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <select class="form-control input-lg" name="nombcliente">
-                
-                <option value="">--Selecionar un Vendedor--</option>
-
-                <option value="Vendedor">Juan Martinez</option>
-
-                <option value="Vendedor">Luis Santos</option>
-
-              </select>
-
-            </div>
-
-          </div>
-
-          
-
-          <!-- ENTRADA PARA LA FECHA DE NACIMIENTO -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="date" class="form-control input-lg" name="nuevoFecha" placeholder="Ingresar Fecha de v" required>
-
-            </div>
-
-          </div>
-
-
-          <!-- ENTRADA PARA EL USUARIO (cliente)-->
-
-          
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <select class="form-control input-lg" name="nombcliente">
-                
-                <option value="">--Selecionar un cliente--</option>
-
-                <option value="Vendedor">Juan Martinez</option>
-
-                <option value="Vendedor">Luis Santos</option>
-
-              </select>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA EL NOMBRE del Articulo -->
-
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <select class="form-control input-lg" name="nombcliente">
-                
-                <option value="">--Selecionar un Articulo--</option>
-
-                <option value="Articulo">Articulo 1</option>
-
-                <option value="Articulo">Articulo 2</option>
-
-                <option value="Articulo">Articulo 1</option>
-
-                <option value="Articulo">Articulo 2</option>
-
-              </select>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA LA Cantidad-->
-
-          <div class="form-group">
-            
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="number" class="form-control input-lg" name="nuevaCantidad" placeholder="Ingresar Cantidad" required>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA Precio-->
-            
-           <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="pUnitario" placeholder="Precio" required>
-
-            </div>
-
-          </div>
-
-         
-          <!-- ENTRADA PARA LA precio total-->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="text" class="form-control input-lg" name="pTotal" placeholder="Precio Total" required>
-
-            </div>
-
-          </div>
-
-
-          <!-- ENTRADA PARA EL TELÉFONO -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="number" class="form-control input-lg" step="0.5" name="descuento" placeholder="Descuento" autocomplete="off">
-
-            </div>
-
-          </div>
-
-           <!-- ENTRADA PARA SELECCIONAR SU PERFIL -->
-
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <select class="form-control input-lg" name="Metodo de Pago">
-                
-                <option value="">--Selecionar una Opción--</option>
-
-                <option value="Administrador">Efectivo</option>
-
-                <option value="Especial">Tarjeta</option>
-
-              </select>
-
-            </div>
-            <div class="form-group col-md-1 contenedor-boton">
-              <button class="btn btn-primary" type="submit">Aggregar</button>
-            </div>
-
-
-          <!-- ENTRADA PARA tablas -->
-      <section class="row ">
-          <div class="col">
-
-              <table class="table text-center">
-                  <thead>
-                      <tr>
-                          <th>Acción</th>
-                          <th>Articulo</th>
-                          <th>Cantidad</th>
-                          <th>Precio U.</th>
-                          <th>Descuento</th>
-                          <th>Subtotal</th>
-                          <th>Total</th>
-                          <th>Impuesto</th>
-                          <th>Total a pagar</th>
-                      </tr>
-                  </thead>
-                  <tbody id="CuerpoTabla">
-
-                    <tbody>
-              
-                      <tr>
-                        <td>
-            
-                          <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-          
-                        </td>
-                        <td>Producto1</td>
-                        <td>2</td>
-                        <td>20,000</td>
-                        <td>0.00</td>
-                        <td>L.40,000</td>
-                        <td>40,000</td>
-                        <td>0.15</td>
-                        <td>L.41,400</td>
-            
-                      </tr>
-                  </tbody>
-
-              </table>
-
-          </div>
-
-      </section>
-    </div>
-        <div class="modal-footer justify-content-between"><!-- Elemento hijos(pie de pagina se puede poner botton)-->
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar Venta</button>
-        </div>
-
-      </form>
+  <!--=====================================
+   MODAL AGREGAR PROVEEDOR
+======================================-->
+
+
+
+<div class="modal fade" id="#" data-backdrop="static"> <!-- Modal padre de todo el contenido -->
+  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content"> <!-- Elemento hijos-->
+      <form role="form" method="post">
+      <!--=====================================
+      CABEZA DEL MODAL
+      ======================================-->
+      <div class="modal-header"><!--Elemento hijos(Titulo subtitulo o parafo)--> 
+        <h4 class="modal-title">Agregar Nueva Venta</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-  </div>
+       <!--=====================================
+      CUERPO DEL MODAL
+      ======================================-->
+      <div class="modal-body"> <!-- Elemento hijos(puede ir todo el contenido del modal)-->
 
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <strong>Copyright &copy; 2022 <a href="https://adminlte.io">Tienda Militar HN</a>.</strong>
-    Todos los derechos reservados
-    <div class="float-right d-none d-sm-inline-block">
-     
+        <!-- ENTRADA PARA EL Numero de Venta -->
+          
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"></span> 
+
+            <input type="text" class="form-control input-lg" name="numeroVenta" placeholder="Ingresar Numero de Venta" required>
+
+          </div>
+
+        </div>
+
+        <!-- ENTRADA PARA EL Vendedor -->
+          
+        
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"><i class=""></i></span> 
+
+            <select class="form-control input-lg" name="nombcliente">
+              
+              <option value="">--Selecionar un Vendedor--</option>
+
+              <option value="Vendedor">Juan Martinez</option>
+
+              <option value="Vendedor">Luis Santos</option>
+
+            </select>
+
+          </div>
+
+        </div>
+
+        
+
+        <!-- ENTRADA PARA LA FECHA DE NACIMIENTO -->
+          
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"></span> 
+
+            <input type="date" class="form-control input-lg" name="nuevoFecha" placeholder="Ingresar Fecha de v" required>
+
+          </div>
+
+        </div>
+
+
+        <!-- ENTRADA PARA EL USUARIO (cliente)-->
+
+        
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"><i class=""></i></span> 
+
+            <select class="form-control input-lg" name="nombcliente">
+              
+              <option value="">--Selecionar un cliente--</option>
+
+              <option value="Vendedor">Juan Martinez</option>
+
+              <option value="Vendedor">Luis Santos</option>
+
+            </select>
+
+          </div>
+
+        </div>
+
+        <!-- ENTRADA PARA EL NOMBRE del Articulo -->
+
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"><i class=""></i></span> 
+
+            <select class="form-control input-lg" name="nombcliente">
+              
+              <option value="">--Selecionar un Articulo--</option>
+
+              <option value="Articulo">Articulo 1</option>
+
+              <option value="Articulo">Articulo 2</option>
+
+              <option value="Articulo">Articulo 1</option>
+
+              <option value="Articulo">Articulo 2</option>
+
+            </select>
+
+          </div>
+
+        </div>
+
+        <!-- ENTRADA PARA LA Cantidad-->
+
+        <div class="form-group">
+          
+          <div class="input-group">
+          
+            <span class="input-group-addon"><i class=""></i></span> 
+
+            <input type="number" class="form-control input-lg" name="nuevaCantidad" placeholder="Ingresar Cantidad" required>
+
+          </div>
+
+        </div>
+
+        <!-- ENTRADA PARA Precio-->
+          
+         <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"></span> 
+
+            <input type="text" class="form-control input-lg" name="pUnitario" placeholder="Precio" required>
+
+          </div>
+
+        </div>
+
+       
+        <!-- ENTRADA PARA LA precio total-->
+          
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"><i class=""></i></span> 
+
+            <input type="text" class="form-control input-lg" name="pTotal" placeholder="Precio Total" required>
+
+          </div>
+
+        </div>
+
+
+        <!-- ENTRADA PARA EL TELÉFONO -->
+          
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"><i class=""></i></span> 
+
+            <input type="number" class="form-control input-lg" step="0.5" name="descuento" placeholder="Descuento" autocomplete="off">
+
+          </div>
+
+        </div>
+
+         <!-- ENTRADA PARA SELECCIONAR SU PERFIL -->
+
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"><i class=""></i></span> 
+
+            <select class="form-control input-lg" name="Metodo de Pago">
+              
+              <option value="">--Selecionar una Opción--</option>
+
+              <option value="Administrador">Efectivo</option>
+
+              <option value="Especial">Tarjeta</option>
+
+            </select>
+
+          </div>
+          <div class="form-group col-md-1 contenedor-boton">
+            <button class="btn btn-primary" type="submit">Aggregar</button>
+          </div>
+
+
+        <!-- ENTRADA PARA tablas -->
+    <section class="row ">
+        <div class="col">
+
+            <table class="table text-center">
+                <thead>
+                    <tr>
+                        <th>Acción</th>
+                        <th>Articulo</th>
+                        <th>Cantidad</th>
+                        <th>Precio U.</th>
+                        <th>Descuento</th>
+                        <th>Subtotal</th>
+                        <th>Total</th>
+                        <th>Impuesto</th>
+                        <th>Total a pagar</th>
+                    </tr>
+                </thead>
+                <tbody id="CuerpoTabla">
+
+                  <tbody>
+            
+                    <tr>
+                      <td>
+          
+                        <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+        
+                      </td>
+                      <td>Producto1</td>
+                      <td>2</td>
+                      <td>20,000</td>
+                      <td>0.00</td>
+                      <td>L.40,000</td>
+                      <td>40,000</td>
+                      <td>0.15</td>
+                      <td>L.41,400</td>
+          
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+  </div>
+      <div class="modal-footer justify-content-between"><!-- Elemento hijos(pie de pagina se puede poner botton)-->
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Venta</button>
+      </div>
+
+    </form>
     </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+
+
+
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+
+    </div>
+    <strong>Copyright &copy; 2022 <a href="">Tienda Militar HN</a>.</strong> Todos los derechos reservados..
   </footer>
 
-    <!-- Control Sidebar -->
-   <aside class="control-sidebar control-sidebar-dark">
-     <!-- Control sidebar content goes here -->
-   </aside>
-   <!-- /.control-sidebar -->
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
 
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
- <!-- Bootstrap 4 -->
+<!-- Bootstrap 4 -->
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables  & Plugins -->
+<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+<script src="../../plugins/jszip/jszip.min.js"></script>
+<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
+<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
+<!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<!-- Page specific script -->
+
+<script>
+  $(function () {
+    $("#tablas").DataTable({
+
+      
+    "language": {
+
+   "sProcessing":     "Procesando...",
+   "sLengthMenu":     "Mostrar _MENU_ registros",
+   "sZeroRecords":    "No se encontraron resultados",
+   "sEmptyTable":     "Ningún dato disponible en esta tabla",
+   "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_",
+   "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0",
+   "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+   "sInfoPostFix":    "",
+   "sSearch":         "Buscar:",
+   "sUrl":            "",
+   "sInfoThousands":  ",",
+   "sLoadingRecords": "Cargando...",
+   "oPaginate": {
+   "sFirst":    "Primero",
+   "sLast":     "Último",
+   "sNext":     "Siguiente",
+   "sPrevious": "Anterior"
+  },
+    "oAria": {
+    "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+  }
+      },
+      "responsive": true, "lengthChange": false, "autoWidth": false,
+
+    }).buttons().container().appendTo('#tablas_wrapper .col-md-6:eq(0)');
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+
+
 </body>
+
 </html>
