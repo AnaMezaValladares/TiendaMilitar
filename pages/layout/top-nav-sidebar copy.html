@@ -399,15 +399,15 @@
 
 
               <tr>
-                <td>1</td>
-                <td>22-03-2022</td>
-                <td>PROV-001</td>
-                <td>La Tundra</td>
-                <td>08011996110863</td>
-                <td>Admin</td>
-                <td>OD-202201</td>
-                <td>000-001-01-00171005</td>
-                <td>L.20,000</td>
+                <td>PROV_002</td>
+                <td>MARYANN HN</td>
+                <td>05/04/2022</td>
+                <td>10/04/2022</td>
+                <td>Entrega Adomicilio</td>
+                <td>Credito</td>
+                <td>Navajas</td>
+                <td>20</td>
+                <td>L.50.00</td>
                 <td>
     
                   <div class="btn-group">
@@ -424,15 +424,15 @@
 
 
               <tr>
-                <td>1</td>
-                <td>22-03-2022</td>
-                <td>PROV-001</td>
-                <td>La Tundra</td>
-                <td>08011996110863</td>
-                <td>Admin</td>
-                <td>OD-202201</td>
-                <td>000-001-01-00171005</td>
-                <td>L.20,000</td>
+                <td>PROV_003</td>
+                <td>Inversiones Cruz</td>
+                <td>15/03/2022</td>
+                <td>25/03/2022</td>
+                <td>Entrega empresa</td>
+                <td>Contado</td>
+                <td>Uniformes</td>
+                <td>6</td>
+                <td>L.400.00</td>
                 <td>
     
                   <div class="btn-group">
@@ -480,7 +480,7 @@
         CABEZA DEL MODAL
         ======================================-->
         <div class="modal-header">
-          <h4 class="modal-title">Agregar Categoría</h4>
+          <h4 class="modal-title">Agregar Orden de compra</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -490,7 +490,7 @@
         ======================================-->
         <div class="modal-body">
 
-          <!-- ENTRADA PARA EL CODIGO -->
+          <!-- ENTRADA PARA EL CODIGO PROVEEDOR -->
             
           <div class="form-group">
               
@@ -498,7 +498,7 @@
             
               <span class="input-group-addon"></span> 
 
-              <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="Ingresar Código Categoría" required>
+              <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="Ingresar Código Proveedor" required>
 
             </div>
 
@@ -506,7 +506,7 @@
 
                         
          
-          <!-- ENTRADA PARA EL NOMBRE -->
+          <!-- ENTRADA PARA EL NOMBRE PROVEEDOR -->
             
           <div class="form-group">
               
@@ -514,13 +514,13 @@
             
               <span class="input-group-addon"></span> 
 
-              <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Ingresar Nombre " required>
+              <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Ingresar Nombre Proveedor " required>
 
             </div>
 
           </div>
 
-          <!-- ENTRADA PARA EL DESCRIPCION  -->
+          <!-- ENTRADA PARA LA FECHA DE PEDIDO  -->
             
           <div class="form-group">
               
@@ -528,21 +528,112 @@
             
               <span class="input-group-addon"></span> 
 
-              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Descripción" required>
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Fecha de pedido" required>
 
             </div>
 
           </div>
+
+
+          
+          <!-- ENTRADA PARA LA FECHA REQUERIDA DEL PEDIDO  -->
+            
+          <div class="form-group">
+              
+            <div class="input-group">
+            
+              <span class="input-group-addon"></span> 
+
+              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Fecha entrega requerida del pedido" required>
+
+            </div>
+
+          </div>
+             
+             <!-- ENTRADA PARA TERMINOS DE ENTREGA  -->
+            
+             <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"></span> 
+  
+                <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Tipo Terminios entrega" required>
+  
+              </div>
+  
+            </div>
+          
+
+                       
+             <!-- ENTRADA PARA TERMINOS DE PAGO  -->
+            
+             <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"></span> 
+  
+                <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Terminos pago" required>
+  
+              </div>
+  
+            </div>  
+          
+
+                       
+             <!-- ENTRADA PARA NOMBRE PRODUCTO  -->
+            
+             <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"></span> 
+  
+                <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Nombre Producto" required>
+  
+              </div>
+  
+            </div>  
+
+
                       
-                
+             <!-- ENTRADA PARA CANTIDAD PRODUCTO  -->
+            
+             <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"></span> 
+  
+                <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Cantidad Producto" required>
+  
+              </div>
+  
+            </div>  
           
 
-          
+
+            
+                      
+             <!-- ENTRADA PARA COSTO UNITARIO  -->
+            
+             <div class="form-group">
+              
+              <div class="input-group">
+              
+                <span class="input-group-addon"></span> 
+  
+                <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Costo unitario del producto" required>
+  
+              </div>
+  
+            </div>  
   
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar Categoría</button>
+          <button type="button" class="btn btn-primary">Guardar Orden</button>
         </div>
 
       </form>
