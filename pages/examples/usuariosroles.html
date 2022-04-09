@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tienda Militar HN | Proveedores</title>
+  <title>Tienda Militar HN | Roles </title>
   <link rel="icon" href="../../dist/img/LOGO DIMINUTO.jpg">
+
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -16,8 +17,6 @@
   <link rel="stylesheet" href="../../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
-
-
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -28,9 +27,7 @@
   <div class="preloader flex-column justify-content-center align-items-center">
     <img class="animation__shake" src="../../dist/img/LOGO DIMINUTO.jpg" alt="logodiminuto" height="60" width="60">
   </div>
-
-
-  
+ 
 
   
   <nav class="main-header navbar navbar-expand navbar-white navbar-light">
@@ -69,11 +66,10 @@
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
+    <!-- Brand Logo  IMAGEN LOGO ESQUINA IZQUIERDA SUPERIOR-->
     <a href="../../index.html" class="brand-link">
       <img src="../../dist/img/LOGO PEQUEÑO.jpg" alt="TIENDA LOGO" class="img-fluid">
     </a>
-
 
     <!-- Sidebar -->
     <div class="sidebar">
@@ -106,6 +102,7 @@
                   </p>
                 </a>
               </li>
+          
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon  fas fa-users"></i>
@@ -137,12 +134,11 @@
                   
                 </ul>
               </li>
-    
-          
+
+
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas   fa-warehouse"></i>
-             
              
               <p>
                 Inventario
@@ -157,7 +153,6 @@
                   <p>Inventario</p>
                 </a>
               </li>
-
 
               <li class="nav-item">
                 <a href="categorias.html" class="nav-link">
@@ -174,14 +169,13 @@
                     <span class="right badge badge-danger">!</span>
                   </p>
                 </a>
-              </li>
-              
+              </li>             
               
             </ul>
           </li>
 
           <li class="nav-item">
-            <a href="inventario.html" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas  fa-store"></i>
              
              
@@ -193,15 +187,15 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
+                <a href="compras.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Administrar Compras</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../layout/top-nav-sidebar.html" class="nav-link">
+                <a href="../layout/top-nav-sidebar copy.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Nueva Compra</p>
+                  <p>Nueva Orden de Compra</p>
                 </a>
               </li>
               <li class="nav-item">
@@ -215,7 +209,7 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Archivo de Factura</p>
                 </a>
-              </li>          
+              </li>         
               
             </ul>
           </li>
@@ -226,7 +220,6 @@
               <p>
                 Ventas
                 <i class="fas fa-angle-left right"></i>
-               
               </p>
             </a>
             <ul class="nav nav-treeview">
@@ -241,16 +234,16 @@
                   <i class="far fa-circle nav-icon"></i>
                   <p>Crear Venta</p>
                 </a>
-              </li>            
-            </ul>
-            <li class="nav-item">
+              </li>
+             </ul>  
+             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas   fa-warehouse"></i>
                
                
                 <p>
                   Reporte
-                  <i class="fas fa-angle-left right"></i>
+                  
                  
                 </p>
               </a>
@@ -277,10 +270,11 @@
                     <i class="far fa-circle nav-icon"></i>
                     <p>
                       Reporte de Venta
-                     
+                    
                     </p>
                   </a>
                 </li>
+
                 <li class="nav-item">
                   <a href="reporte_provedoor.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
@@ -303,6 +297,9 @@
                   </a>
                 </li>
               </ul>
+
+
+
 
               <li class="nav-item">
                 <a href="#" class="nav-link">
@@ -346,15 +343,16 @@
             </ul>
           </li>
 
-            </li>
-            <li class="nav-item">
-              <a href="contactanos.html" class="nav-link">
-                <i class="nav-icon far fa-envelope"></i>
-                <p>
-                  Contacto
-                </p>
-              </a>
-            </li>
+              
+            </li>     
+              <li class="nav-item">
+                <a href="contactanos.html" class="nav-link">
+                  <i class="nav-icon far fa-envelope"></i>
+                  <p>
+                    Contacto
+                  </p>
+                </a>
+              </li>    
             
       </nav>
       <!-- /.sidebar-menu -->
@@ -369,12 +367,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Proveedores</h1>
+            <h1>Roles</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item active">Proveedores</li>
+              <li class="breadcrumb-item active">Usuarios Roles</li>
             </ol>
           </div>
         </div>
@@ -389,183 +387,131 @@
         <div class="card-header">
          
 
-          <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarProveedor">
-          
-            Agregar Proveedor
-  
+          <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarProducto">
+            Agregar
           </button>
         </div>
         <div class="card-body">
-          <table id="tablas" class="table table-bordered table-striped">
+          <table class="table table-bordered table-striped dt-responsive tablas">
+         
             <thead>
              
              <tr>
-               
               <th style="width:10px">#</th>
-              <th>Código Proveedor</th>
-              <th>DNI/RTN</th>
-              <th>Nombre Empresa</th>
-              <th>Nombre Contacto</th>
-              <th>Cargo</th>
-              <th>Dirección</th>
-              <th>Ciudad</th>
-              <th>Pais</th>
-              <th>Teléfono</th>
-              <th>Correo Electrónico</th>
-              <th>Fecha de Registro</th>
+              <th>ID</th>
+              <th>Rol</th>
+              <th>Estado</th>
+              <th>Ultima Modificacion</th>
               <th>Acciones</th>
     
              </tr> 
     
             </thead>
     
-            <tbody>
+            <tr>
+              <td>1</td>
+              <td>1000</td>
+              <td>Administrador</td>
+              <td><h5><span class="badge bg-success">Activo</span></h5></td>
+              <td>2022-01-01 12:10:55</td>
+              <td>
+                <div class="btn-group">
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                </div>  
+              </td>
               
-              <tr>
-                <td>1</td>
-                <td>CE-001</td>
-                <td>08011997110856</td>
-                <td>La Tumdra</td>
-                <td>Jose Martinez</td>
-                <td>Jefe de compras</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>Tegucilagapa</td>
-                <td>Hoduras</td>
-                <td>99152214</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>22-03-2022</td>
-                
-                
-                <td>
-    
-                  <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
-    
-                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-    
-                  </div>  
-    
-                </td>
-    
-              </tr>
+            </tr>
+            
+            <tr>
+              <td>2</td>
+              <td>1001</td>
+              <td>Administrador</td>
+              <td><h5><span class="badge bg-danger">Inactivo</span></h5></td>
+              <td>2022-01-01 12:10:55</td>
+              <td>
+                <div class="btn-group">
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                </div>  
+              </td>
+              
+            </tr>
 
-              <tr>
-                <td>1</td>
-                <td>CE-001</td>
-                <td>08011997110856</td>
-                <td>La Tumdra</td>
-                <td>Jose Martinez</td>
-                <td>Jefe de compras</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>Tegucilagapa</td>
-                <td>Hoduras</td>
-                <td>99152214</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>22-03-2022</td>
-                
-                
-                <td>
-    
-                  <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
-    
-                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-    
-                  </div>  
-    
-                </td>
-    
-              </tr>
+            <tr>
+              <td>3</td>
+              <td>2001</td>
+              <td>Empleado</td>
+              <td><h5><span class="badge bg-success">Activo</span></h5></td>
+              <td>2022-01-01 12:10:55</td>
+              <td>
+                <div class="btn-group">
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                </div>  
+              </td>
+              
+            </tr>
 
-              <tr>
-                <td>1</td>
-                <td>CE-001</td>
-                <td>08011997110856</td>
-                <td>La Tumdra</td>
-                <td>Jose Martinez</td>
-                <td>Jefe de compras</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>Tegucilagapa</td>
-                <td>Hoduras</td>
-                <td>99152214</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>22-03-2022</td>
-                
-                
-                <td>
-    
-                  <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
-    
-                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-    
-                  </div>  
-    
-                </td>
-    
-              </tr>
+            <tr>
+              <td>4</td>
+              <td>2001</td>
+              <td>Empleado</td>
+              <td><h5><span class="badge bg-success">Activo</span></h5></td>
+              <td>2022-01-01 12:10:55</td>
+              <td>
+                <div class="btn-group">
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                </div>  
+              </td>
+              
+            </tr>
 
-              <tr>
-                <td>1</td>
-                <td>CE-001</td>
-                <td>08011997110856</td>
-                <td>La Tumdra</td>
-                <td>Jose Martinez</td>
-                <td>Jefe de compras</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>Tegucilagapa</td>
-                <td>Hoduras</td>
-                <td>99152214</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>22-03-2022</td>
-                
-                
-                <td>
-    
-                  <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
-    
-                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-    
-                  </div>  
-    
-                </td>
-    
-              </tr>
+            <tr>
+              <td>5</td>
+              <td>1003</td>
+              <td>Administrador</td>
+              <td><h5><span class="badge bg-danger">Inactivo</span></h5></td>
+              <td>2022-01-01 12:10:55</td>
+              <td>
+                <div class="btn-group">
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                </div>  
+              </td>
+              
+            </tr>
 
-              <tr>
-                <td>1</td>
-                <td>CE-001</td>
-                <td>08011997110856</td>
-                <td>La Tumdra</td>
-                <td>Jose Martinez</td>
-                <td>Jefe de compras</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>Tegucilagapa</td>
-                <td>Hoduras</td>
-                <td>99152214</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>22-03-2022</td>
-                
-                
-                <td>
-    
-                  <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
-    
-                    <button class="btn btn-danger"><i class="fa fa-times"></i></button>
-    
-                  </div>  
-    
-                </td>
-    
-              </tr>
-               
+            <tr>
+              <td>6</td>
+              <td>3000</td>
+              <td>Cliente</td>
+              <td><h5><span class="badge bg-danger">Inactivo</span></h5></td>
+              <td>2022-01-01 12:10:55</td>
+              <td>
+                <div class="btn-group">
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                </div>  
+              </td>
+              
+            </tr>
+
+            <tr>
+              <td>7</td>
+              <td>3001</td>
+              <td>Cliente</td>
+              <td><h5><span class="badge bg-success">Activo</span></h5></td>
+              <td>2022-01-01 12:10:55</td>
+              <td>
+                <div class="btn-group">
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+                </div>  
+              </td>
+              
+            </tr>
                
     
             </tbody>
@@ -583,12 +529,12 @@
   <!-- /.content-wrapper -->
 
 <!--=====================================
-     MODAL AGREGAR PROVEEDOR
+     MODAL AGREGAR PRODUCTOS
   ======================================-->
 
 
 
-  <div class="modal fade" id="modalAgregarProveedor">
+  <div class="modal fade" id="modalAgregarProducto">
     <div class="modal-dialog">
       <div class="modal-content">
         <form role="form" method="post">
@@ -596,7 +542,7 @@
         CABEZA DEL MODAL
         ======================================-->
         <div class="modal-header">
-          <h4 class="modal-title">Agregar Proveedor</h4>
+          <h4 class="modal-title">Agregar Rol</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -606,159 +552,42 @@
         ======================================-->
         <div class="modal-body">
 
-          <!-- ENTRADA PARA EL CODIGO -->
+          <!-- ENTRADA PARA EL ID-->
             
           <div class="form-group">
-              
             <div class="input-group">
-            
               <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoCodigoProv" placeholder="Ingresar Código Proveedor" required>
-
+              <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="ID" required>
             </div>
-
           </div>
 
-          <!-- ENTRADA PARA EL DNI/RTN-->
+          <!-- SELLECIONAR ROL -->
             
           <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoDNIRTN" placeholder="Ingresar DNI/RTN" required>
-
-            </div>
-
+            <select class="form-control select2bs4" style="width: 100%;">
+              <option selected="selected">Selecione Rol</option>
+              <option>Administrador</option>
+              <option>Empleado</option>
+              <option>Cliente</option>
+            </select>
           </div>
 
-               
+                        
          
-          <!-- ENTRADA PARA EL NOMBRE EMPRESA-->
-            
+          <!-- ENTRADA PARA ESTADO -->
           <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Ingresar Nombre de Empresa" required>
-
-            </div>
-
+            <select class="form-control select2bs4" style="width: 100%;">
+              <option selected="selected">Selecione Estado</option>
+              <option>Activo</option>
+              <option>Inactivo</option>
+            </select>
           </div>
-
-          <!-- ENTRADA PARA EL NOMBRE CONTACTO  -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Nombre de Contacto" required>
-
-            </div>
-
-          </div>
-
-         
-          <!-- ENTRADA PARA LA DIRECCIÓN -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevaDireccion" placeholder="Ingresar Dirección" required>
-
-            </div>
-
-          </div>
-
-           <!-- ENTRADA PARA LA CIUDAD-->
-            
-           <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevaDireccion" placeholder="Ingresar Ciudad" required>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA PAIS-->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevaDireccion" placeholder="Ingresar Pais" required>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA EL TELÉFONO -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar Teléfono" data-inputmask="'mask':'(999) 9999-9999'" data-mask required>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA EL EMAIL -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Ingresar Correo Electrónico" required>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA FECHA DE REGISTRO -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoFecha" placeholder="Ingresar Fecha de Registro" required>
-
-            </div>
-
-          </div>
-
- 
-
-          
-
-          
-  
+                      
+                
         </div>
         <div class="modal-footer justify-content-between">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar Proveedor</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-success">Guardar</button>
         </div>
 
       </form>
@@ -775,8 +604,10 @@
     <div class="float-right d-none d-sm-block">
      
     </div>
-    <strong>Copyright &copy; 2022 <a href="">Tienda Militar HN</a>.</strong> Todos los derechos reservados..
+    <strong>Copyright &copy; 2022 <a href="">Tienda Militar HN</a>.</strong> Todos los derechos reservados.
   </footer>
+
+  
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
@@ -791,112 +622,13 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
 <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- DataTables  & Plugins -->
-<script src="../../plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="../../plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="../../plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="../../plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-<script src="../../plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-<script src="../../plugins/jszip/jszip.min.js"></script>
-<script src="../../plugins/pdfmake/pdfmake.min.js"></script>
-<script src="../../plugins/pdfmake/vfs_fonts.js"></script>
-<script src="../../plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-<script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
-<script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
-<!-- Page specific script -->
-<script>
-  $(function () {
-    $("#tablas").DataTable({
 
-      "language": {
-
-"sProcessing":     "Procesando...",
-"sLengthMenu":     "Mostrar _MENU_ registros",
-"sZeroRecords":    "No se encontraron resultados",
-"sEmptyTable":     "Ningún dato disponible en esta tabla",
-"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_",
-"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0",
-"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-"sInfoPostFix":    "",
-"sSearch":         "Buscar:",
-"sUrl":            "",
-"sInfoThousands":  ",",
-"sLoadingRecords": "Cargando...",
-"oPaginate": {
-"sFirst":    "Primero",
-"sLast":     "Último",
-"sNext":     "Siguiente",
-"sPrevious": "Anterior"
-},
-"oAria": {
-  "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-  "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-}
-      
-    },
-    "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": [ "csv", "excel", "pdf"]
-    }).buttons().container().appendTo('#tablas_wrapper .col-md-6:eq(0)');
-    $('#example2').DataTable({
-      "paging": true,
-      "lengthChange": false,
-      "searching": false,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
-      "responsive": true,
-    });
-  });
-</script>
-
-<script>
-  $(function () {
-    $("#example1").DataTable({
-
-      "language": {
-
-"sProcessing":     "Procesando...",
-"sLengthMenu":     "Mostrar _MENU_ registros",
-"sZeroRecords":    "No se encontraron resultados",
-"sEmptyTable":     "Ningún dato disponible en esta tabla",
-"sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_",
-"sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0",
-"sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-"sInfoPostFix":    "",
-"sSearch":         "Buscar:",
-"sUrl":            "",
-"sInfoThousands":  ",",
-"sLoadingRecords": "Cargando...",
-"oPaginate": {
-"sFirst":    "Primero",
-"sLast":     "Último",
-"sNext":     "Siguiente",
-"sPrevious": "Anterior"
-},
-"oAria": {
-  "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
-  "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-}
-
-}
-
-      
-    
-    
-    })
-  });
-
-</script>
 
 </body>
 </html>
