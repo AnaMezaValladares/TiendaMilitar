@@ -401,11 +401,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 id="inputNumv">
                           </div>
                           <div class="container col-md-2">
-                              <label for="">Nombre Vendedor</label>
-                              <input type="text"
-                               class="form-control" 
-                               placeholder="Ejem: Juan Martinez"
-                               id="inputNum">
+                              <div class="col-auto">
+                                <div class="col-sm">
+                                  <h5>Nombre Vendedor</h5>
+                                </div>
+                                <select class="form-control input-lg" id="carrito" name="articulo">
+                                  <option value="Efectivo">Juan Martinez</option>
+                                  <option value="Debito">Carlos Lobo</option>
+                                  <option value="Credito">Juana Herrera</option>
+                                </select></div>
                           </div>
                           <div class="container col-md-2">
                               <label for="">Fecha</label>
@@ -504,10 +508,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <div class="col-sm"></div>
               <div class="col-sm"></div>
               <div class="col-sm">
-                <h5>Impuesto(15%)</h5>
+                <h5>Impuesto(%)</h5>
               </div>
               <div class="col-sm"><input type="text" class="form-control total" name="total" id="total" required=""
-                  value="L. " autocomplete="off" disabled=""></div>
+                  value=" " autocomplete="off" disabled=""></div>
             </div>
           </div>
           <div class="container">

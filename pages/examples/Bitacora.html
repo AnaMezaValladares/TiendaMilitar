@@ -298,15 +298,6 @@
                 </li>
               </ul>
 
-              <li class="nav-item">
-                <a href="roles.html" class="nav-link">
-                  <i class="nav-icon fas fa-table"></i>
-                  <p>
-                    Seguridad
-                  </p>
-                </a>
-              </li>
-
             </li>
             
             <li class="nav-item">
@@ -374,12 +365,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Clientes</h1>
+            <h1>Bitacora de Actividad</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-              <li class="breadcrumb-item active">Clientes</li>
+              <li class="breadcrumb-item active">Bitacora de Actividad</li>
             </ol>
           </div>
         </div>
@@ -391,15 +382,7 @@
 
       <!-- Default box -->
       <div class="card">
-        <div class="card-header">
-         
 
-          <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCliente">
-          
-            Agregar Cliente
-  
-          </button>
-        </div>
         <div class="card-body">
           <table id="tablas" class="table table-bordered table-striped">
             <thead>
@@ -407,14 +390,10 @@
              <tr>
                
               <th style="width:10px">#</th>
-              <th>Código Cliente</th>
-              <th>DNI/RTN</th>
-              <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Dirección</th>
-              <th>Teléfono</th>
-              <th>Correo Electrónico</th>
-              <th>Fecha de registro</th>
+              <th>Fecha y Hora</th>
+              <th>Usuario</th>
+              <th>Modulo</th>
+              <th>Descripción Actividad</th>
               <th>Acciones</th>
     
              </tr> 
@@ -425,96 +404,64 @@
               
               <tr>
                 <td>1</td>
-                <td>CL-001</td>
-                <td>08011997110856</td>
-                <td>Juancarlos</td>
-                <td>Maradiaga</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>99526321</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>2017-12-11 12:05:32</td>
+                <td>2017-12-11 11:05:32</td>
+                <td>JuanMartinez</td>
+                <td>Personas</td>
+                <td>Agrego un nuevo proveedor</td>
                 <td>
-    
                   <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
                   </div>  
-    
                 </td>
     
               </tr>
 
               <tr>
                 <td>1</td>
-                <td>CL-001</td>
-                <td>08011997110856</td>
-                <td>Juancarlos</td>
-                <td>Maradiaga</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>99526321</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>2017-12-11 12:05:32</td>
+                <td>2017-12-11 11:05:32</td>
+                <td>LuisRosa</td>
+                <td>Ventas</td>
+                <td>Se realizo venta</td>
                 <td>
-    
                   <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
                   </div>  
-    
                 </td>
     
               </tr>
 
               <tr>
                 <td>1</td>
-                <td>CL-001</td>
-                <td>08011997110856</td>
-                <td>Juancarlos</td>
-                <td>Maradiaga</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>99526321</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>2017-12-11 12:05:32</td>
+                <td>2017-12-11 11:05:32</td>
+                <td>DanielMora</td>
+                <td>Compras</td>
+                <td>Genero un reporte de compras</td>
                 <td>
-    
                   <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
                   </div>  
-    
                 </td>
     
               </tr>
 
               <tr>
                 <td>1</td>
-                <td>CL-001</td>
-                <td>08011997110856</td>
+                <td>2017-12-11 11:05:32</td>
                 <td>Juancarlos</td>
-                <td>Maradiaga</td>
-                <td>Col Santa cruz trecera calle casa N19</td>
-                <td>99526321</td>
-                <td>jc.maradiaga@gmail.com</td>
-                <td>2017-12-11 12:05:32</td>
+                <td>Compras</td>
+                <td>Nuevas compras</td>
                 <td>
-    
                   <div class="btn-group">
-                      
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
                   </div>  
-    
                 </td>
     
               </tr>
@@ -536,161 +483,6 @@
   </div>
   <!-- /.content-wrapper -->
 
-<!--=====================================
-     MODAL AGREGAR CLIENTE
-  ======================================-->
-
-
-
-  <div class="modal fade" id="modalAgregarCliente">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <form role="form" method="post">
-        <!--=====================================
-        CABEZA DEL MODAL
-        ======================================-->
-        <div class="modal-header">
-          <h4 class="modal-title">Agregar Cliente</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-         <!--=====================================
-        CUERPO DEL MODAL
-        ======================================-->
-        <div class="modal-body">
-
-          <!-- ENTRADA PARA EL CODIGO -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="Ingresar Código Cliente" required>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA EL DNI/RTN-->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoDNIRTN" placeholder="Ingresar DNI/RTN" required>
-
-            </div>
-
-          </div>
-
-               
-         
-          <!-- ENTRADA PARA EL NOMBRE -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Ingresar Nombre" required>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA EL APELLIDO  -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Apellido" required>
-
-            </div>
-
-          </div>
-
-         
-          <!-- ENTRADA PARA LA DIRECCIÓN -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevaDireccion" placeholder="Ingresar Dirección" required>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA EL TELÉFONO -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar Teléfono" data-inputmask="'mask':'(999) 9999-9999'" data-mask required>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA EL EMAIL -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Ingresar Correo Electrónico" required>
-
-            </div>
-
-          </div>
-
-          <!-- ENTRADA PARA FECHA DE REGISTRO -->
-            
-          <div class="form-group">
-              
-            <div class="input-group">
-            
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoFecha" placeholder="Ingresar Fecha de Registro" required>
-
-            </div>
-
-          </div>
-
- 
-
-    
-  
-        </div>
-        <div class="modal-footer justify-content-between">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Guardar Cliente</button>
-        </div>
-
-      </form>
-      </div>
-      <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-  </div>
 
 
 
@@ -709,10 +501,6 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
-
-<!-- Bootstrap 5 -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- jQuery -->
 <script src="../../plugins/jquery/jquery.min.js"></script>
@@ -767,7 +555,6 @@
       
     },
     "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": [ "csv", "excel", "pdf"]
     }).buttons().container().appendTo('#tablas_wrapper .col-md-6:eq(0)');
     $('#example2').DataTable({
       "paging": true,
