@@ -401,7 +401,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1></h1>
+            <h1>Archivo Facturas de Compras</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -459,7 +459,7 @@
                 
                 <tr>
                   <td>1</td>
-                  <td>0001</td>
+                  <td>OD-202201</td>
                   <td>PROV-001</td>
                   <td>Inversiones Cruz</td>
                   <td>08011996110062</td>
@@ -474,7 +474,7 @@
       
                     <div class="btn-group">
                           
-                      <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                      <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#ArchivoFacturaModal"></i></button>      
       
                       <button class="btn btn-danger"><i class="fa fa-times"></i></button>
       
@@ -486,7 +486,7 @@
   
                 <tr>
                   <td>2</td>
-                  <td>0002</td>
+                  <td>OD-202202</td>
                   <td>PROV-002</td>
                   <td>Zaragoza Group</td>
                   <td>08081990110087</td>
@@ -501,7 +501,7 @@
       
                     <div class="btn-group">
                           
-                      <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                      <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#ArchivoFacturaModal"></i></button>      
       
                       <button class="btn btn-danger"><i class="fa fa-times"></i></button>
       
@@ -516,7 +516,7 @@
   
                 <tr>
                   <td>3</td>
-                  <td>0003</td>
+                  <td>OD-202203</td>
                   <td>PROV-003</td>
                   <td>LAGOS HN</td>
                   <td>08061986110120</td>
@@ -531,8 +531,7 @@
       
                     <div class="btn-group">
                         
-                      <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
-      
+                      <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#ArchivoFacturaModal"></i></button>      
                       <button class="btn btn-danger"><i class="fa fa-times"></i></button>
       
                     </div>  
@@ -641,7 +640,7 @@
               
                 <span class="input-group-addon"></span> 
   
-                <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar DNI O RTN" required>
+                <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar DNI / RTN" required>
   
               </div>
   
@@ -679,17 +678,24 @@
 
              <!-- ENTRADA PARA ELINGRESO DEL TIPO DE COMPRA-->
               
-             <div class="form-group">
-                
-              <div class="input-group">
+          
+      <div class="form-group">
               
-                <span class="input-group-addon"></span> 
-  
-                <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar el tipo de compra" required>
-  
-              </div>
-  
-            </div>
+        <div class="input-group">
+        
+          <span class="input-group-addon"></span> 
+
+          <select class="form-control input-lg " placeholder="form-control input-lg">
+            <option selected>Seleccione Tipo de compra</option>
+            <option value="1">Credito</option>
+            <option value="2">Contado</option>
+            
+           
+          </select>
+
+        </div>
+
+      </div>
 
 
              <!-- ENTRADA PARA ELINGRESO DEL TOTAL DE LA COMPRA-->
@@ -707,19 +713,16 @@
             </div>
 
 
-            <!-- ENTRADA PARA ELINGRESO DEL ESTADO DE LA COMPRA-->
+            <!-- ENTRADA PARA SELECCIONAR ESTADO DE LA COMPRA-->
               
-            <div class="form-group">
-                
-              <div class="input-group">
-              
-                <span class="input-group-addon"></span> 
-  
-                <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar el estado de la compra" required>
-  
-              </div>
-  
-            </div>
+               <div class="form-group">
+
+                <select class="form-control select2bs4" style="width: 100%;">
+                  <option selected="selected">Selecione Estado</option>
+                  <option>Pendiente</option>
+                  <option>Pagado</option>
+                </select>
+             </div>    
 
              <!-- ENTRADA PARA SUBIR SCANNER DE FACTURA -->
 
@@ -757,6 +760,109 @@
       <!-- /.modal-dialog -->
     </div>
   
+
+
+
+
+<!--*************************************************************************************************************************************************************-->
+
+
+
+<!-- MODAL BOTON EDITRAR ARCHIVO FACTURA -->
+<div class="modal fade" id="ArchivoFacturaModal" tabindex="-1" role="dialog" aria-labelledby="ArchivoFacturaModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="ArchivoFacturaModalLabel">EDITAR ARCHIVO FACTURA  </h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Formulario del Modal-->
+    <div class="modal-body">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Numero de orden compra " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Código Proveedor " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Nombre proveedor " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar DNI/RTN" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Fecha ingreso de factura" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+
+      <div class="form-group">
+              
+        <div class="input-group">
+        
+          <span class="input-group-addon"></span> 
+
+          <select class="form-control input-lg " placeholder="form-control input-lg">
+            <option selected>Editar Tipo de compra</option>
+            <option value="1">Credito</option>
+            <option value="2">Contado</option>
+            
+           
+          </select>
+
+        </div>
+
+      </div>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Total Compra" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+
+     
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary">Guardar</button>
+    </div>
+    <!--Fin del Modal-->
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 

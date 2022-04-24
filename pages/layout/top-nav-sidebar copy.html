@@ -466,7 +466,7 @@
     
                   <div class="btn-group">
                       
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#OrdenCompraModal"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
@@ -491,7 +491,7 @@
     
                   <div class="btn-group">
                       
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#OrdenCompraModal"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
@@ -516,7 +516,7 @@
     
                   <div class="btn-group">
                       
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#OrdenCompraModal"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
@@ -545,8 +545,12 @@
   </div>
   <!-- /.content-wrapper -->
 
+
+  <!--*************************************************************************************************************************************************************-->
+
+
 <!--=====================================
-     MODAL AGREGAR CATEGORIAS
+     MODAL AGREGAR ORDEN DE COMPRA
   ======================================-->
 
 
@@ -628,36 +632,57 @@
             </div>
 
           </div>
+
+
              
-             <!-- ENTRADA PARA TERMINOS DE ENTREGA  -->
-            
-             <div class="form-group">
-              
-              <div class="input-group">
-              
-                <span class="input-group-addon"></span> 
-  
-                <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Tipo Terminios entrega" required>
-  
-              </div>
-  
-            </div>
+      
           
+
+
+             <!-- ENTRADA PARA TERMINOS DE ENTREGA  -->
+
+            <div class="form-group">
+
+            <div class="input-group">
+            
+              <span class="input-group-addon"></span> 
+    
+              <select class="form-control input-lg " placeholder="form-control input-lg">
+                <option selected>Seleccione Terminos de entrega</option>
+                <option value="1">Entrga empresa</option>
+                <option value="2">Entrega Adomicilio</option>
+
+               
+              </select>
+    
+            </div>
+
+          </div>
+
+    
+
 
                        
              <!-- ENTRADA PARA TERMINOS DE PAGO  -->
-            
-             <div class="form-group">
               
+             <div class="form-group">
+                  
               <div class="input-group">
               
                 <span class="input-group-addon"></span> 
-  
-                <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Terminos pago" required>
-  
+      
+                <select class="form-control input-lg " placeholder="form-control input-lg">
+                  <option selected>Seleccione Terminos de pago</option>
+                  <option value="1">Credito</option>
+                  <option value="2">Contado</option>
+                  <option value="2">Credito/Contado</option>
+
+                 
+                </select>
+      
               </div>
-  
-            </div>  
+      
+            </div>
           
 
                        
@@ -721,6 +746,113 @@
     </div>
     <!-- /.modal-dialog -->
   </div>
+
+
+<!--*************************************************************************************************************************************************************-->
+
+
+
+<!-- MODAL BOTON EDITRAR ORDEN DE COMPRA -->
+<div class="modal fade" id="OrdenCompraModal" tabindex="-1" role="dialog" aria-labelledby="OrdenCompraModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="OrdenCompraModalLabel">EDITAR ORDEN COMPRA </h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Formulario del Modal-->
+    <div class="modal-body">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Codigo proveedor " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Nombre proveedor " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Fecha de pedido" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Fecha de entrega del pedido" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+      <div class="form-group">
+              
+        <div class="input-group">
+        
+          <span class="input-group-addon"></span> 
+
+          <select class="form-control input-lg " placeholder="form-control input-lg">
+            <option selected>Termino de pago</option>
+            <option value="1">Credito</option>
+            <option value="2">Contado</option>
+            <option value="2">Credito/Contado</option>
+           
+          </select>
+
+        </div>
+
+      </div>
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Producto" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Cantidad" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+
+     <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Costo unitario" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+     
+     
+
+
+
+      
+
+     
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary">Guardar</button>
+    </div>
+    <!--Fin del Modal-->
+  </div>
+</div>
+</div>
+
+
+
+
+
+
 
 
 

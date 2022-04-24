@@ -396,6 +396,9 @@
     <!-- /.sidebar -->
   </aside>
 
+
+
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -429,6 +432,7 @@
         </div>
         <div class="card-body">
           <table class="table table-bordered table-striped dt-responsive tablas">
+
          
             <thead>
              
@@ -452,7 +456,7 @@
               <td>2022-01-01 12:10:55</td>
               <td>
                 <div class="btn-group">
-                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#UsuariosRolesModal"></i></button>    
                   <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                 </div>  
               </td>
@@ -467,7 +471,7 @@
               <td>2022-01-01 12:10:55</td>
               <td>
                 <div class="btn-group">
-                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#UsuariosRolesModal"></i></button>    
                   <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                 </div>  
               </td>
@@ -482,7 +486,7 @@
               <td>2022-01-01 12:10:55</td>
               <td>
                 <div class="btn-group">
-                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#UsuariosRolesModal"></i></button>    
                   <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                 </div>  
               </td>
@@ -497,7 +501,7 @@
               <td>2022-01-01 12:10:55</td>
               <td>
                 <div class="btn-group">
-                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#UsuariosRolesModal"></i></button>    
                   <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                 </div>  
               </td>
@@ -512,7 +516,7 @@
               <td>2022-01-01 12:10:55</td>
               <td>
                 <div class="btn-group">
-                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#UsuariosRolesModal"></i></button>    
                   <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                 </div>  
               </td>
@@ -527,7 +531,7 @@
               <td>2022-01-01 12:10:55</td>
               <td>
                 <div class="btn-group">
-                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#UsuariosRolesModal"></i></button>    
                   <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                 </div>  
               </td>
@@ -542,7 +546,7 @@
               <td>2022-01-01 12:10:55</td>
               <td>
                 <div class="btn-group">
-                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#UsuariosRolesModal"></i></button>    
                   <button class="btn btn-danger"><i class="fa fa-times"></i></button>
                 </div>  
               </td>
@@ -632,6 +636,81 @@
     </div>
     <!-- /.modal-dialog -->
   </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- MODAL BOTON EDITRAR USUARIO ROLES-->
+<div class="modal fade" id="UsuariosRolesModal" tabindex="-1" role="dialog" aria-labelledby="UsuariosRolesModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="UsuariosRolesModalLabel">EDITAR USUARIO  </h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Formulario del Modal-->
+    <div class="modal-body">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar ID " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+      <div class="form-group">
+        <select class="form-control select2bs4" style="width: 100%;">
+          <option selected="selected">Selecione Rol</option>
+          <option>Administrador</option>
+          <option>Empleado</option>
+          <option>Cliente</option>
+        </select>
+      </div>
+      <!-- SELLECIONAR ROL -->
+            
+      <div class="form-group">
+        <select class="form-control select2bs4" style="width: 100%;">
+          <option selected="selected">Selecione Estado</option>
+          <option>Activo</option>
+          <option>Inactivo</option>
+         
+        </select>
+      </div>
+
+      
+
+
+
+     
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary">Guardar</button>
+    </div>
+    <!--Fin del Modal-->
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 

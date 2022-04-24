@@ -447,9 +447,10 @@
               <th>Usuario</th>
               <th>Orden Compra</th>
               <th>Factura </th>
+              <th>Descripción</th>
+              <th>Cantidad </th>
               <th>Total Compra </th>
               <th>Termino de Pago</th>
-              <th>Descripción</th>
               <th>Estado</th>
               <th>Acciones</th>
     
@@ -468,18 +469,17 @@
                 <td>Admin</td>
                 <td>OD-202201</td>
                 <td>000-001-01-00171005</td>
+                <td>MOCHILA GRANDE</td>
+                <td>50</td>
                 <td>L.20,000</td>
                 <td>Contado</td>
-                <td>Compra de mercaderia camisas Nautica</td>
                 <td><button class="btn btn-success btn-xs">Pagado</button></td>
                 
                   <td>
     
                   <div class="btn-group">
-
-                    <button class="btn btn-info"><i class="fas fa-file-pdf"></i></button>
                       
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#compraModal"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
@@ -491,26 +491,25 @@
 
 
               <tr>
-                <td>2</td>
+                <td>1</td>
                 <td>22-03-2022</td>
                 <td>PROV-001</td>
-                <td>La Tundra</td>
+                <td>Inversiones Zarabia</td>
                 <td>08011996110863</td>
                 <td>Admin</td>
                 <td>OD-202201</td>
                 <td>000-001-01-00171005</td>
-                <td>L.20,000</td>
-                <td>Credito</td>
-                <td>Compra de mercaderia camisas Nautica</td>
+                <td>GUANTES ESDY NEGROS</td>
+                <td>200</td>
+                <td>L.30,000</td>
+                <td>Credito/contado</td>
                 <td><button class="btn btn-success btn-xs">Pagado</button></td>
                 
                   <td>
     
                   <div class="btn-group">
-
-                    <button class="btn btn-info"><i class="fas fa-file-pdf"></i></button>
                       
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#compraModal"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
@@ -522,26 +521,25 @@
 
 
               <tr>
-                <td>3</td>
+                <td>1</td>
                 <td>22-03-2022</td>
                 <td>PROV-001</td>
-                <td>La Tundra</td>
-                <td>08011996110863</td>
+                <td>La Sabana HN</td>
+                <td>08011996110861</td>
                 <td>Admin</td>
                 <td>OD-202201</td>
-                <td>000-001-01-00171005</td>
-                <td>L.20,000</td>
-                <td>Credito</td>
-                <td>Compra de mercaderia camisas Nautica</td>
+                <td>000-001-01-00171003</td>
+                <td>CAMELBACK YAKEDA</td>
+                <td>20</td>
+                <td>L.10,000</td>
+                <td>Credito/contado</td>
                 <td><button class="btn btn-danger btn-xs">Crédito</button></td>
                 
                   <td>
     
                   <div class="btn-group">
-
-                    <button class="btn btn-info"><i class="fas fa-file-pdf"></i></button>
                       
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#compraModal"></i></button>
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
@@ -558,7 +556,7 @@
 
               
                
-               
+              
     
             </tbody>
     
@@ -573,6 +571,11 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+
+
+
+  <!--*************************************************************************************************************************************************************-->
 
 <!--=====================================
      MODAL AGREGAR CATEGORIAS
@@ -686,6 +689,25 @@
     
               </div>
 
+
+
+
+              <!-- ENTRADA PARA LA DESCRIPCION -->
+            
+              <div class="form-group">
+              
+                <div class="input-group">
+                
+                  <span class="input-group-addon"></span> 
+    
+                  <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingrese Descripcion del producto" required>
+    
+                </div>
+    
+              </div>
+
+
+
                <!-- ENTRADA PARA LA FACTURA  -->
             
                <div class="form-group">
@@ -716,42 +738,48 @@
 
 
                <!-- ENTRADA PARA TERMINO DE PAGO -->
-            
+
                <div class="form-group">
               
                 <div class="input-group">
                 
                   <span class="input-group-addon"></span> 
     
-                  <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingrese Termino de Pago" required>
-    
-                </div>
-    
-              </div>
-
-              <!-- ENTRADA PARA LA DESCRIPCION -->
-            
-              <div class="form-group">
-              
-                <div class="input-group">
-                
-                  <span class="input-group-addon"></span> 
-    
-                  <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingrese Descripcion del producto" required>
+                  <select class="form-control input-lg " placeholder="form-control input-lg">
+                    <option selected>Seleccione Termino de pago</option>
+                    <option value="1">Credito</option>
+                    <option value="2">Contado</option>
+                    <option value="2">Credito/Contado</option>
+                   
+                  </select>
     
                 </div>
     
               </div>
 
 
+              <!-- ENTRADA PARA ESTADO -->
+             <div class="form-group">
+
+             <select class="form-control select2bs4" style="width: 100%;">
+               <option selected="selected">Selecione Estado</option>
+               <option>Credito</option>
+               <option>Contado</option>
+             </select>
+          </div>            
 
 
-          
-  
+
+
+
+
+
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
           <button type="button" class="btn btn-primary">Guardar Compra</button>
+          <button type="button" class="btn btn-primary"data-toggle="modal"data-target="#VerInventarioModal">Ver Inventario</button>
+
         </div>
 
       </form>
@@ -760,6 +788,461 @@
     </div>
     <!-- /.modal-dialog -->
   </div>
+
+
+
+<!--*************************************************************************************************************************************************************-->
+
+
+
+
+<!-- MODAL BOTON EDITRAR COMPRA -->
+<div class="modal fade" id="compraModal" tabindex="-1" role="dialog" aria-labelledby="compraModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="compraModalLabel">EDITAR COMPRA </h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Formulario del Modal-->
+    <div class="modal-body">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Proveedor" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar DNI/RTN " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Total compra " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Descripción" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+
+
+      <div class="form-group">
+              
+        <div class="input-group">
+        
+          <span class="input-group-addon"></span> 
+
+          <select class="form-control input-lg " placeholder="form-control input-lg">
+            <option selected>Termino de pago</option>
+            <option value="1">Credito</option>
+            <option value="2">Contado</option>
+            <option value="2">Credito/Contado</option>
+           
+          </select>
+
+        </div>
+
+      </div>
+      
+     
+
+
+
+
+   
+      
+     
+     
+
+
+
+      
+
+     
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary">Guardar</button>
+    </div>
+    <!--Fin del Modal-->
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--*************************************************************************************************************************************************************-->
+
+
+
+
+
+
+<!-- MODAL BOTON VER INVENTARIO -->
+<div class="modal fade" id="VerInventarioModal" tabindex="-1" role="dialog" aria-labelledby="VerInventarioModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-xl" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="VerInventarioModalLabel">INVENTARIO </h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Formulario del Modal-->
+    <div class="modal-body">
+
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-primary"data-toggle="modal"data-target="#InventarioModal">Actualizar Inventario</button>
+        
+        <button type="button" class="btn btn-primary">Guardar</button>
+  
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+      </div>
+
+
+      <div class="card-body">
+        <table class="table table-bordered table-striped dt-responsive tablas">
+       
+          <thead>
+           
+           <tr>
+             
+            <th style="width:10px">#</th>
+            <th>Imagen</th>
+            <th>Código Art.</th>
+            <th>Nombre</th>
+            <th>Categoria</th>
+            <th>Descripción</th>
+            <th>Precio Compra</th>
+            <th>Precio Venta</th>
+            <th>Existencias</th>
+            <th>Estado</th>
+            <th>Ultima Modificacion</th>
+            <th>Acciones</th>
+  
+           </tr> 
+  
+          </thead>
+  
+          <tbody>
+            
+            <tr>
+              <td>1</td>
+              <td><img src="../../dist/img/anonymous.png" class="img-thumbnail" width="40px"></td>
+              <td>32135</td>
+              <td>Camisa Polo</td>
+              <td>Camisas</td>
+              <td>Estilo polo, Color Verde</td>
+              <td>L.200.00</td>
+              <td>L.350.00</td>               
+              <td>6</td>
+              <td><h5><span class="badge bg-success">Disponible</span></h5></td>
+              <td>2022-01-01 12:10:55</td>
+              
+              <td>
+  
+                <div class="btn-group">
+                    
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#InventarioTModal"></i></button>    
+  
+                  <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+  
+                </div>  
+  
+              </td>
+  
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td><img src="../../dist/img/anonymous.png" class="img-thumbnail" width="40px"></td>
+              <td>16854</td>
+              <td>Reloj Salco</td>
+              <td>Relojes</td>
+              <td>resistente al agua, doble hora, color negro, brazalete hule</td>
+              <td>L.250.00</td>
+              <td>L.350.00</td>               
+              <td>13</td>
+              <td><h5><span class="badge bg-success">Disponible</span></h5></td>
+              <td>2022-01-01 12:10:55</td>
+              
+              <td>
+  
+                <div class="btn-group">
+                    
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#InventarioTModal"></i></button>    
+  
+                  <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+  
+                </div>  
+  
+              </td>
+  
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td><img src="../../dist/img/anonymous.png" class="img-thumbnail" width="40px"></td>
+              <td>87465</td>
+              <td>Pantalon Negro</td>
+              <td>Pantalones</td>
+              <td>moteado, color negro, detalles de varios colores</td>
+              <td>L.300.00</td>
+              <td>L.450.00</td>               
+              <td>8</td>
+              <td><h5><span class="badge bg-success">Disponible</span></h5></td>
+              <td>2022-01-01 12:10:55</td>
+              
+              <td>
+  
+                <div class="btn-group">
+                    
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#InventarioTModal"></i></button>    
+  
+                  <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+  
+                </div>  
+  
+              </td>
+  
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td><img src="../../dist/img/anonymous.png" class="img-thumbnail" width="40px"></td>
+              <td>13513</td>
+              <td>Llavero Metalico</td>
+              <td>Llaveros</td>
+              <td>Metalico, color plata, forma rifle de asalto</td>
+              <td>L.80.00</td>
+              <td>L.150.00</td>               
+              <td>10</td>
+              <td><h5><span class="badge bg-success">Disponible</span></h5></td>
+              <td>2022-01-01 12:10:55</td>
+              
+              <td>
+  
+                <div class="btn-group">
+                    
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#InventarioTModal"></i></button>    
+  
+                  <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+  
+                </div>  
+  
+              </td>
+  
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td><img src="../../dist/img/anonymous.png" class="img-thumbnail" width="40px"></td>
+              <td>97845</td>
+              <td>Insignia Estrella</td>
+              <td>Insignias</td>
+              <td>Forma estrella, color dorado</td>
+              <td>L.50.00</td>
+              <td>L.120.00</td>               
+              <td>0</td>
+              <td><h5><span class="badge bg-danger">Agotado</span></h5></td>
+              <td>2022-01-01 12:10:55</td>
+              
+              <td>
+  
+                <div class="btn-group">
+                    
+                  <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#InventarioTModal"></i></button>    
+  
+                  <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+  
+                </div>  
+  
+              </td>
+  
+            </tr>
+             
+             
+  
+          </tbody>
+  
+         </table>
+      </div>
+      <!-- /.card-body -->
+      
+    </div>
+    <!-- /.card -->
+
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+
+    </div>
+
+  
+    <!--Fin del Modal-->
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- MODAL BOTON EDITRAR INVENTARIO -->
+    <div class="modal fade" id="InventarioTModal" tabindex="-1" role="dialog" aria-labelledby="InventarioTModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="InventarioTModalLabel">EDITAR INVENTARIO </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!--Formulario del Modal-->
+        <div class="modal-body">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"></span>
+            <input type="text" class="form-control" placeholder="Editar Descripcion del producto " aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+    
+    
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"></span>
+            <input type="text" class="form-control" placeholder="Editar Precio compra  " aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+    
+    
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"></span>
+            <input type="text" class="form-control" placeholder="Editar Precio venta" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+    
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"></span>
+            <input type="text" class="form-control" placeholder="Editar Existencias" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+    
+    
+    
+          <div class="form-group">
+                  
+            <div class="input-group">
+            
+              <span class="input-group-addon"></span> 
+    
+              <select class="form-control input-lg " placeholder="form-control input-lg">
+                <option selected>Estado</option>
+                <option value="1">Disponible</option>
+                <option value="2">Agotado</option>
+                
+               
+              </select>
+    
+            </div>
+    
+          </div>
+    
+    
+    
+    
+    
+         
+    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+        <!--Fin del Modal-->
+      </div>
+    </div>
+    </div>
+    
+
+<!--*************************************************************************************************************************************************************-->
+
+
+
+
+<!-- MODAL BOTON ACTUALIZAR INVENTARIO -->
+<div class="modal fade" id="InventarioModal" tabindex="-1" role="dialog" aria-labelledby="InventarioModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-lg" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="InventarioModalLabel">INVENTARIO </h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Formulario del Modal-->
+    <div class="modal-body">
+
+
+
+     
+     <div class="container-fluid">
+       <br>
+       <div class ="row">
+         <div class ="col-md-10">
+           <div class="alert alert-success">El articulo ha sido actualizado</div>
+         </div>
+       </div>
+     </div>
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+    </div>
+    <!--Fin del Modal-->
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!--*************************************************************************************************************************************************************-->
+
+
 
   <footer class="main-footer">
     <div class="float-right d-none d-sm-block">

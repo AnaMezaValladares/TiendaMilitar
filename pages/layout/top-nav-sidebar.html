@@ -438,6 +438,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       </form>
           </div>
       </section>
+
         <hr style="width: 100%; background-color: transparent; height: 1px; border-color : transparent;"><br>
         <div name="carrito" id="carrito">
           <table class="table table-bordered table-striped tablaCarrito">
@@ -525,10 +526,16 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   value="L. 2.471,34" autocomplete="off" disabled=""></div>
             </div>
           </div><br><br>
+
+         
+          
           <hr style="width: 100%; background-color: rgb(238, 232, 232); height: 1px; border-color : transparent;"><br>
           <div class="row d-flex justify-content-around">
-            <div class="col-auto"><button class="btn btn-primary" data-bs-toggle="modal"
-                data-bs-target="#modalAgregarCliente" href="../examples/clientes.html">Nuevo Cliente</button></div>
+            <div class="col-auto">
+              
+
+              <button class="btn btn-primary" data-toggle="modal"
+                data-target="#NuevoClienteModal">Nuevo Cliente</button></div>
             <div class="col-auto">
               <div class="form-group">
                 <form role="form" method="post" class="formularioCrearventa"><input type="text"
@@ -537,6 +544,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </div>
             </div>
           </div>
+
+
+
           <div class="row datosCliente" style="display:none">
             <div class="col-sm-4">
               <div class="form-group"><label for="title" class="col-sm-2 control-label">Telefono</label><input
@@ -584,6 +594,506 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </div>
     <!-- /.content-wrapper -->
     <!-- /.control-sidebar -->
+
+
+
+
+
+
+<!--BOTON MODAL AGREGAR NUEVO CLIENTE-->
+
+
+<div class="modal fade" id="NuevoClienteModal" tabindex="-1" role="dialog" aria-labelledby="NuevoClienteModalLabel"
+aria-hidden="true">
+<div class="modal-dialog modal-xl" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="NuevoClienteModalLabel">NUEVO CLIENTE </h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Formulario del Modal-->
+    <div class="modal-body">
+
+      
+
+<!-- Main content -->
+<section class="content">
+
+  <!-- Default box -->
+  <div class="card">
+    <div class="card-header">
+     
+
+      <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCliente">
+      
+        Agregar Cliente
+
+      </button>
+    </div>
+    <div class="card-body">
+      <table id="tablas" class="table table-bordered table-striped">
+        <thead>
+         
+         <tr>
+           
+          <th style="width:10px">#</th>
+          <th>Código Cliente</th>
+          <th>DNI/RTN</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Dirección</th>
+          <th>Teléfono</th>
+          <th>Correo Electrónico</th>
+          <th>Fecha de registro</th>
+          <th>Limite de credito</th>
+          <th>Acciones</th>
+
+         </tr> 
+
+        </thead>
+
+        <tbody>
+          
+          <tr>
+            <td>1</td>
+            <td>CL-001</td>
+            <td>08011997110856</td>
+            <td>Juancarlos</td>
+            <td>Maradiaga</td>
+            <td>Col Santa cruz trecera calle casa N19</td>
+            <td>99526321</td>
+            <td>jc.maradiaga@gmail.com</td>
+            <td>2017-12-11 12:05:32</td>
+            <td>2,000</td>
+            <td>
+
+              <div class="btn-group">
+                  
+                <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#ClientesModal"></i></button>    
+
+                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+
+              </div>  
+
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>CL-001</td>
+            <td>08011997110856</td>
+            <td>Juancarlos</td>
+            <td>Maradiaga</td>
+            <td>Col Santa cruz trecera calle casa N19</td>
+            <td>99526321</td>
+            <td>jc.maradiaga@gmail.com</td>
+            <td>2017-12-11 12:05:32</td>
+            <td>1,000</td>
+            <td>
+
+              <div class="btn-group">
+                  
+                <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#ClientesModal"></i></button>    
+
+                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+
+              </div>  
+
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>CL-001</td>
+            <td>08011997110856</td>
+            <td>Juancarlos</td>
+            <td>Maradiaga</td>
+            <td>Col Santa cruz trecera calle casa N19</td>
+            <td>99526321</td>
+            <td>jc.maradiaga@gmail.com</td>
+            <td>2017-12-11 12:05:32</td>
+            <td>2,000</td>
+            <td>
+
+              <div class="btn-group">
+                  
+                <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#ClientesModal"></i></button>    
+
+                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+
+              </div>  
+
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>CL-001</td>
+            <td>08011997110856</td>
+            <td>Juancarlos</td>
+            <td>Maradiaga</td>
+            <td>Col Santa cruz trecera calle casa N19</td>
+            <td>99526321</td>
+            <td>jc.maradiaga@gmail.com</td>
+            <td>2017-12-11 12:05:32</td>
+            <td>3,000</td>
+            <td>
+
+              <div class="btn-group">
+                  
+                <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#ClientesModal"></i></button>    
+
+                <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+
+              </div>  
+
+            </td>
+
+          </tr>
+           
+           
+
+        </tbody>
+
+
+       </table>
+    </div>
+    <!-- /.card-body -->
+    
+  </div>
+  <!-- /.card -->
+
+</section>
+<!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+
+
+
+
+<!--MODAL AGREGAR NUEVO CLIENTE-->
+
+
+<div class="modal fade" id="modalAgregarCliente">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form role="form" method="post">
+      <!--=====================================
+      CABEZA DEL MODAL
+      ======================================-->
+      <div class="modal-header">
+        <h4 class="modal-title">Agregar Cliente</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+       <!--=====================================
+      CUERPO DEL MODAL
+      ======================================-->
+      <div class="modal-body">
+
+        <!-- ENTRADA PARA EL CODIGO -->
+          
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"></span> 
+
+            <input type="text" class="form-control input-lg" name="nuevoCodigoCL" placeholder="Ingresar Código Cliente" required>
+
+          </div>
+
+        </div>
+
+        <!-- ENTRADA PARA EL DNI/RTN-->
+          
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"></span> 
+
+            <input type="text" class="form-control input-lg" name="nuevoDNIRTN" placeholder="Ingresar DNI/RTN" required>
+
+          </div>
+
+        </div>
+
+             
+       
+        <!-- ENTRADA PARA EL NOMBRE -->
+          
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"></span> 
+
+            <input type="text" class="form-control input-lg" name="nuevoCliente" placeholder="Ingresar Nombre" required>
+
+          </div>
+
+        </div>
+
+        <!-- ENTRADA PARA EL APELLIDO  -->
+          
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"></span> 
+
+            <input type="text" class="form-control input-lg" name="nuevoApellido" placeholder="Ingresar Apellido" required>
+
+          </div>
+
+        </div>
+
+       
+        <!-- ENTRADA PARA LA DIRECCIÓN -->
+          
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"><i class=""></i></span> 
+
+            <input type="text" class="form-control input-lg" name="nuevaDireccion" placeholder="Ingresar Dirección" required>
+
+          </div>
+
+        </div>
+
+        <!-- ENTRADA PARA EL TELÉFONO -->
+          
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"><i class=""></i></span> 
+
+            <input type="text" class="form-control input-lg" name="nuevoTelefono" placeholder="Ingresar Teléfono" data-inputmask="'mask':'(999) 9999-9999'" data-mask required>
+
+          </div>
+
+        </div>
+
+        <!-- ENTRADA PARA EL EMAIL -->
+          
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"><i class=""></i></span> 
+
+            <input type="email" class="form-control input-lg" name="nuevoEmail" placeholder="Ingresar Correo Electrónico" required>
+
+          </div>
+
+        </div>
+
+        <!-- ENTRADA PARA FECHA DE REGISTRO -->
+          
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"><i class=""></i></span> 
+
+            <input type="text" class="form-control input-lg" name="nuevoFecha" placeholder="Ingresar Fecha de Registro" required>
+
+          </div>
+
+        </div>
+
+        <!-- ENTRADA PARA limite de credito -->
+
+        <div class="form-group">
+            
+          <div class="input-group">
+          
+            <span class="input-group-addon"></span> 
+  
+            <select class="form-control input-lg " placeholder="form-control input-lg">
+              <option selected>Seleccione Limite de credito</option>
+              <option value="1">1,000</option>
+              <option value="2">2,000</option>
+              <option value="2">3,000</option>
+              <option value="2">4,000</option>
+              <option value="2">5,000</option>
+  
+  
+  
+              
+             
+            </select>
+  
+          </div>
+  
+        </div>
+
+
+
+  
+
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar Cliente</button>
+      </div>
+
+    </form>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+
+
+
+
+
+<!-- MODAL BOTON EDITRAR CLIENTE -->
+<div class="modal fade" id="ClientesModal" tabindex="-1" role="dialog" aria-labelledby="ClientesModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="ClientesModalLabel">EDITAR CLIENTE  </h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Formulario del Modal-->
+    <div class="modal-body">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Codigo del cliente " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar DNI/RTN " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Nombre " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Apellido" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Direccion del cliente" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Telefono/celular" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Correo electronico" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Fecha de registro del cliente" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="form-group">
+              
+        <div class="input-group">
+        
+          <span class="input-group-addon"></span> 
+
+          <select class="form-control input-lg " placeholder="form-control input-lg">
+            <option selected>Seleccione Limite de credito</option>
+            <option value="1">1,000</option>
+            <option value="2">2,000</option>
+            <option value="2">3,000</option>
+            <option value="2">4,000</option>
+            <option value="2">5,000</option>
+
+
+
+            
+           
+          </select>
+
+        </div>
+
+      </div>
+
+
+     
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary">Guardar</button>
+    </div>
+    <!--Fin del Modal-->
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+    </div>
+
+  
+    <!--Fin del Modal-->
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <footer class="main-footer">

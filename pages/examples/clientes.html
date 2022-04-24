@@ -392,6 +392,10 @@
     <!-- /.sidebar -->
   </aside>
 
+
+
+
+  
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -459,12 +463,12 @@
                 <td>99526321</td>
                 <td>jc.maradiaga@gmail.com</td>
                 <td>2017-12-11 12:05:32</td>
-                <th>5000</th>
+                <td>2,000</td>
                 <td>
     
                   <div class="btn-group">
                       
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#ClientesModal"></i></button>    
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
@@ -484,12 +488,12 @@
                 <td>99526321</td>
                 <td>jc.maradiaga@gmail.com</td>
                 <td>2017-12-11 12:05:32</td>
-                <th>5000</th>
+                <td>1,000</td>
                 <td>
     
                   <div class="btn-group">
                       
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#ClientesModal"></i></button>    
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
@@ -509,12 +513,12 @@
                 <td>99526321</td>
                 <td>jc.maradiaga@gmail.com</td>
                 <td>2017-12-11 12:05:32</td>
-                <th>5000</th>
+                <td>2,000</td>
                 <td>
     
                   <div class="btn-group">
                       
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#ClientesModal"></i></button>    
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
@@ -534,12 +538,12 @@
                 <td>99526321</td>
                 <td>jc.maradiaga@gmail.com</td>
                 <td>2017-12-11 12:05:32</td>
-                <th>5000</th>
+                <td>3,000</td>
                 <td>
     
                   <div class="btn-group">
                       
-                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"></i></button>
+                    <button class="btn btn-warning"><i class="fas fa-pencil-alt"data-toggle="modal" data-target="#ClientesModal"></i></button>    
     
                     <button class="btn btn-danger"><i class="fa fa-times"></i></button>
     
@@ -711,12 +715,24 @@
               
             <div class="input-group">
             
-              <span class="input-group-addon"><i class=""></i></span> 
-
-              <input type="text" class="form-control input-lg" name="nuevoLimitedecredito" placeholder="Ingresar Limite de Credito" required>
-
+              <span class="input-group-addon"></span> 
+    
+              <select class="form-control input-lg " placeholder="form-control input-lg">
+                <option selected>Seleccione Limite de credito</option>
+                <option value="1">1,000</option>
+                <option value="2">2,000</option>
+                <option value="2">3,000</option>
+                <option value="2">4,000</option>
+                <option value="2">5,000</option>
+    
+    
+    
+                
+               
+              </select>
+    
             </div>
-
+    
           </div>
 
  
@@ -735,6 +751,124 @@
     </div>
     <!-- /.modal-dialog -->
   </div>
+
+
+
+
+
+
+
+
+  <!-- MODAL BOTON EDITRAR CLIENTE -->
+<div class="modal fade" id="ClientesModal" tabindex="-1" role="dialog" aria-labelledby="ClientesModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="ClientesModalLabel">EDITAR CLIENTE  </h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <!--Formulario del Modal-->
+    <div class="modal-body">
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Codigo del cliente " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar DNI/RTN " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Nombre " aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Apellido" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Direccion del cliente" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Telefono/celular" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Correo electronico" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"></span>
+        <input type="text" class="form-control" placeholder="Editar Fecha de registro del cliente" aria-label="Username"
+          aria-describedby="basic-addon1">
+      </div>
+
+      <div class="form-group">
+              
+        <div class="input-group">
+        
+          <span class="input-group-addon"></span> 
+
+          <select class="form-control input-lg " placeholder="form-control input-lg">
+            <option selected>Seleccione Limite de credito</option>
+            <option value="1">1,000</option>
+            <option value="2">2,000</option>
+            <option value="2">3,000</option>
+            <option value="2">4,000</option>
+            <option value="2">5,000</option>
+
+
+
+            
+           
+          </select>
+
+        </div>
+
+      </div>
+
+
+     
+
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary">Guardar</button>
+    </div>
+    <!--Fin del Modal-->
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 
