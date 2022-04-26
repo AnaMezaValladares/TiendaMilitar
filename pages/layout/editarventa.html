@@ -392,123 +392,121 @@
 
    <!-- Content Wrapper. Contains page content -->
    <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Detalle de Venta</h1>
+
+                
+    <style>
+    .detalle input[type=number] {
+        width: 100px;
+        text-align: center;
+         border-radius: 5px;
+         border: 1px solid #39c;
+    }
+    </style>
+     
+        <div class="content-header">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="col-sm-6">
+                <h1 class="m-0 text-dark">Editar Venta</h1>
+              </div>
+              <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                  <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
+                  <li class="breadcrumb-item active">Editar Venta</li>
+                </ol>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../../index.html">Inicio</a></li>
-              <li class="breadcrumb-item active">Detalle de Venta</li>
-            </ol>
+         </div>
+       
+         
+      
+      <div class="card">
+      
+      <div class="card-header">
+    
+        <div class="container">
+      
+          <div class="row">
+            
+            <div class="col-sm"><h2><span class="badge badge-secondary"><strong> Fecha: </strong>19-04-2022</span></h2></div>
+            <div class="col-sm"><h2><span class="badge badge-secondary"><strong>Cliente : </strong> Claudio Soborno</span></h2></div>
+            <div class="col-sm"><h2><span class="badge badge-warning">Edicion</span></h2></div>
+    
           </div>
         </div>
-      </div><!-- /.container-fluid -->
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-
-      <!-- Default box -->
-      <div class="card acciones">
-	
-          <div class="card-header">
-
-            <span class="float-left">
-              <a class="btn btn-outline-success" href="top-nav-sidebar.html" role="button" >Nueva Venta</a>
-            </span>
-            
-            
-          <span class="float-right">
-            <a class="btn btn-warning" href="editarventa.html" role="button" target="_blank">Editar</a>
-            <a class="btn btn-info" href="#" role="button" target="_blank">Imprimir</a>
-            </span>
-          
-            
-          
-          
-          </div>
-          
-          </div> 
-          
-            <div class="row">
-            
-            <div class="col-1"></div>
-            
-              <div class="col-sm">
-              <div class="card w-40 bg-info text-white" style="width: 18rem;">
-              <div class="card-header"><strong> Fecha: </strong>13-01-2020 16:00:02</div>
-              <ul class="list-group list-group-flush">
-                
-                <li class="list-group-item text-dark"><strong>Cliente : </strong>Claudio Soborno</li>
-                
-                <li class="list-group-item text-dark"><strong>Vendedor : </strong>admin</li>
-              </ul>
-              </div>
-              </div>
-              
-              <div class="col-sm">
-              <div class="card w-40 bg-info text-white" style="width: 18rem;">
-              <div class="card-header">Pago</div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item text-dark">Efectivo</li>
-                      </ul>
-              </div>
-              </div>
-          
-            </div>
+      
+      </div>
+      
+      </div> 
+      
+      <div class="alert alert-primary text-success" id="mensaje" role="alert" style="display:none;"><strong><center>Cambios guardados correctamente</center></strong></div>
+      
+    <div class="row detalle">
+    
+    <div class="col-xs-0 col-md-1"></div>
+    
+    <div class="col-xs-12 col-md-10">
+    <div class="card">
+     <table class="card-table table editarOperacion table-responsive-sm">
+        <thead>
+          <tr class="table-info">
+            <th scope="col">Cantidad</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Unitario</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+      
+        <tbody>
         
-            
-        <div class="row d-flex justify-content-center">
-        
-        <div class="col-xs-12 col-md-10">
-        <div class="card">
-         <table class="card-table table table-responsive-sm">
-            <thead>
-              <tr class="table-info">
-                <th scope="col">Cantidad</th>
-                <th scope="col">Codigo</th>
-                <th scope="col">Producto</th>
-                <th scope="col">Unitario</th>
-                <th scope="col">Total</th>
-              </tr>
-            </thead>
-          
-            <tbody>
-            
-        <tr>
-              <td><center>10</center></td>
+      <tr class="item">
+                <td><center><input type="number" name="cantidad" class="idOperacion" tipo="2" idOperacion="800" value="1"></center></td>
                 <td>UDJ10</td>
                 <td>Monograma</td>
-                <td> L. 36.50</td>
-                <td> L. 365.00</td>
-        </tr>      
-            </tbody>
-          </table>
-          </div>
-          </div>
-          </div>
-          
-              <div class="row">
-            
-            <div class="col-xs-0 col-md-8"></div>
-            
-              <div class="col-2">
-              <div class="card bg-info text-white" style="width: 16rem;">
-              <div class="card-header"><strong>Items : </strong>1 &nbsp &nbsp &nbsp <strong>Productos : </strong>10</div>
-              <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-info"><strong>Descuento : </strong> L.0.00</li>
-                        <li class="list-group-item text-info"><strong>Impuesto : </strong> L.54.75</li>
-                        <li class="list-group-item text-info"><strong>Total : </strong> L. 419.75</li>
-              </ul>
-              </div>
-              </div>
-                </div>
+                <td><input type="number" value="845.87" disabled></td>
+                <td>L. 36.50</td>
+                </tr>      
+        </tbody>
+      </table>
+      </div>
+      </div>
+      </div>
+      
+          <div class="row total">
         
+        <div class="col-xs-0 col-md-8"></div>
+        
+          <div class="col-2">
+          <div class="card bg-info text-white" style="width: 16rem;">
+          <div class="card-header" id="items"><strong>Items : </strong>2 &nbsp &nbsp &nbsp <strong>Productos : </strong>2</div>
+          <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-dark" style="display:none;"><strong>Sub Total : </strong> L. 3,317.21</li>
+            <li class="list-group-item text-danger " id="descuento" value ="" style="display:none;"><strong>Descuento : </strong> L. 0.00</li>	
+            <script type="text/javascript">let descuento = '0.00'</script>
+                      <li class="list-group-item text-info total"><strong>Total : </strong> L. 419.75</li>
+          </ul>
+          </div>
+          </div>
         </div>
+        
+        
+              <script>
+      window.onload=function() {
+      Swal.fire({
+        title: 'Importante',
+        html: "Maneje este formulario con cuidado<br> Los cambios se guardan automaticamente",
+        icon: 'warning',
+        showCancelButton: false,
+        confirmButtonColor: '#06ba18',
+        confirmButtonText: 'Tendre Cuidado'
+        })
+      }
+      </script>
+      
+          
+                </div>
         
         <footer class="main-footer">
           <div class="float-right d-none d-sm-block">
